@@ -48,6 +48,9 @@ const Projects = () => {
               <div className="projects_data-title">
                 <h2>Tood - Notes</h2>
               </div>
+              <div className="projects_data-responsive">
+                <p>Responsive</p>
+              </div>
               <div className="projects_data-leng">
                 <img src={ReactChiquito} width="50px" />
                 <img src={Mui} width="50px" />

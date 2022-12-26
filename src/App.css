@@ -473,6 +473,14 @@ img {
   margin-top: 20px;
 }
 
+.projects_data-responsive{
+  padding: 0.5rem;
+  margin-top: 10px;
+  border-radius: 7px;
+  border: 1px solid 	#ADFF2F;
+  color: #ADFF2F;
+}
+
 
 .footer {
   display: flex;
