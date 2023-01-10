@@ -49,9 +49,9 @@ const Lenguagues = () => {
       </div>
       <div className="lenguagues_footer">
         <p>
-          Además de estas tecnologías también he aprendido y utilizado
+          Además de estas tecnologías también he aprendido y utilizado 
           <span style={{ color: "rgb(56 189 248)" }}>
-            C# - C++ - C - .NET Framework - .NET Core - SQL Server.
+            <br></br>C# - C++ - C - .NET Framework - .NET Core - SQL Server.
           </span>
         </p>
       </div>

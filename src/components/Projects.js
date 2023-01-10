@@ -9,6 +9,8 @@ import Rick from "../images/rick.png";
 import Techfix from "../images/techfixapp.png";
 import Node from "../images/node.png";
 import Mongo from "../images/mongodbicon.png";
+import findflix from "../images/findflix.png";
+import tmdb from "../images/tmdb.png";
 
 const Projects = () => {
   return (
@@ -24,7 +26,7 @@ const Projects = () => {
             </div>
             <div className="projects_data-info">
               <div className="projects_data-title">
-                <h2>ANIMADLE</h2>
+                <h2>Animadle</h2>
               </div>
               <div className="projects_data-leng">
                 <img src={ReactChiquito} width="50px" />
@@ -81,9 +83,33 @@ const Projects = () => {
                 <img src={Node} width="50px" />
               </div>
               <div className="projects_data-desc">
-                App donde podrás añadir, editar o eliminar tus clientes,
-                equipos, repuestos u ordenes de trabajo para tu negocio de
-                servicio técnico.
+                App donde podrás añadir, editar o eliminar tus servicios para tu
+                negocio de servicio técnico.
+              </div>
+              <button>Ver más</button>
+            </div>
+          </div>
+        </a>
+
+        <a target="_blank" href="https://findflix.vercel.app/">
+          <div className="projects_data">
+            <div className="projects_data-images">
+              <img src={findflix} />
+            </div>
+            <div className="projects_data-info">
+              <div className="projects_data-title">
+                <h2>FindFlix</h2>
+              </div>
+              <div className="projects_data-responsive">
+                <p>Responsive</p>
+              </div>
+              <div className="projects_data-leng">
+                <img src={ReactChiquito} width="50px" />
+                <img src={tmdb} width="50px" />
+              </div>
+              <div className="projects_data-desc">
+                App divertida para encontrar información, servicios de streaming
+                y muchas cosas más de tus películas favoritas.
               </div>
               <button>Ver más</button>
             </div>
