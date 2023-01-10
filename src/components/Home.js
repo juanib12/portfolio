@@ -15,7 +15,7 @@ const Home = () => {
             Sobre mí
           </a>
           <a
-            href="https://drive.google.com/file/d/1vHC4mm_HtAmk4N5x-RBBOa7nZtlX-HTH/view?usp=sharing"
+            href="https://drive.google.com/file/d/1uXhbRizZkEx0LcWYqAAn8hvoHFf3swN_/view?usp=sharing"
             target="__blank"
             className="home_actions-cv"
           >
