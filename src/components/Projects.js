@@ -117,7 +117,7 @@ const Projects = () => {
           </div>
         </a>
 
-        <a target="_blank" href="http://juani-chat-app.vercel.app/">
+        <a target="_blank" href="https://juani-chat-app.vercel.app/">
           <div className="projects_data">
             <div className="projects_data-images">
               <img src={firechat} />
