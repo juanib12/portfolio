@@ -11,13 +11,8 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <Header />
       <section className="bd-grid">
         <div className="contact">
-          <div className="contact-title">
-            <h2>Contactame 📩</h2>
-          </div>
           <div className="contact-data_list">
             <a href="https://github.com/juanib12" target="__blank">
               <div className="contact-data-images">
@@ -43,8 +38,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      {/* <Footer/> */}
-    </>
   );
 };
 

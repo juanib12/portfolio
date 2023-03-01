@@ -7,8 +7,6 @@ import Profile from '../images/profile.png'
 
 const Home = () => {
   return (
-    <>
-    <Header />
     <section className="bd-grid">
       <div className="home">
       <img src={Profile} alt="profile" className="avatar"/>
@@ -31,8 +29,6 @@ const Home = () => {
         </div>
       </div>
     </section>
-    {/* <Footer /> */}
-    </>
   );
 };
 

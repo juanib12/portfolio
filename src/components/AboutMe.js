@@ -4,10 +4,9 @@ import Lenguages from "./Lenguages";
 const AboutMe = () => {
   return (
     <>
-      <Header />
       <section className="about bd-grid" id="about">
         <div className="about-title">
-          <h2>Sobre mí y tecnologías que aprendí ☕</h2>
+          <h2>Sobre mí y tecnologías que aprendí</h2>
         </div>
         <div className="about_data_title">
           <h2>¿Quién soy?</h2>

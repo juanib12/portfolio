@@ -14,8 +14,6 @@ import tmdb from "../images/tmdb.png";
 
 const Projects = () => {
   return (
-    <>
-      <Header />
       <section className="projects bd-grid">
         <div className="main-title">
           <h1>Proyectos ✅</h1>

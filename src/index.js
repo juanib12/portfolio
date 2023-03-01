@@ -8,11 +8,13 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Header from "./components/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
+      <Header />
       <Routes>
         <Route path="/" element={<App />}/>
         <Route path="/about" element={<AboutMe />} />
