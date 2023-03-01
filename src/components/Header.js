@@ -1,15 +1,33 @@
-import JB from '../images/jb.png'
+import JB from "../images/jb.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className='header'>
-      <nav className='nav bd-grid'>
+    <header class="l-header">
+      <nav class="nav bd-grid">
         <div>
-          <a href="#" className="nav__logo">
-            <img src={JB} width="40px" />
-            <span>Juan Bianco</span>
-          </a>
+          <Link to="/" className="nav__logo">
+            Juan Bianco
+          </Link>
         </div>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <Link to="/about" className="nav__link active">
+              About
+            </Link>
+          </li>
+          <li class="nav__item">
+            <Link to="/projects" className="nav__link">
+              Projects
+            </Link>
+          </li>
+          <li class="nav__item">
+            <Link to="/contact" className="nav__link">
+              Contact
+            </Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );
