@@ -18,7 +18,6 @@ const Footer = () => {
           >
             Tood notes
           </a>
-          <a className="footer-link">Rick And Morty API</a>
           <a
             className="footer-link"
             href="https://techfix-demo.vercel.app/"
@@ -33,7 +32,6 @@ const Footer = () => {
           >
             FireChat
           </a>
-          <a className="footer-link">Rick And Morty API</a>
 
         </div>
         <div className="footer-data">
