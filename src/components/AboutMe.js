@@ -1,3 +1,4 @@
+import Education from "./Education";
 import Header from "./Header";
 import Lenguages from "./Lenguages";
 
@@ -20,11 +21,12 @@ const AboutMe = () => {
           </p>
           <p>
             Además de estudiar e informarme sobre el mundo IT, me gusta escuchar
-            y crear música mientras disfruto de un café ☕.
+            música mientras disfruto de un café ☕.
           </p>
         </div>
       </section>
       <Lenguages />
+      <Education />
     </>
   );
 };

@@ -51,7 +51,7 @@ const Lenguagues = () => {
         <p>
           Además de estas tecnologías también he aprendido y utilizado 
           <span style={{ color: "rgb(56 189 248)" }}>
-            <br></br>C# - C++ - C - .NET Framework - .NET Core - SQL Server.
+            <br></br>Angular - C# - C++ - C - .NET Framework - .NET Core - SQL Server.
           </span>
         </p>
       </div>
