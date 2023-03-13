@@ -198,6 +198,7 @@ img {
   justify-content: space-between;
   width: 400px;
   align-items: center;
+  margin-top: 10px;
 }
 
 .home_actions-about {
