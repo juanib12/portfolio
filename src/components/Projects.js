@@ -15,26 +15,6 @@ import firechat from "../images/firechat.png";
 import { useState, useEffect } from "react";
 
 const Projects = () => {
-  // const url = "https://api.github.com/users/juanib12/repos";
-
-  // const [repos, setRepos] = useState([]);
-  // const [lenguagesRepos, setLenguagesRepos] = useState([]);
-
-  // async function getRepos() {
-  //   let res = await fetch(url, {
-  //     headers: {
-  //       Authorization: "Bearer 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",
-  //     },
-  //   });
-  //   let repo = await res.json();
-  //   setRepos(repo);
-  // }
-
-  // useEffect(() => {
-  //   getRepos();
-  // }, []);
-
-  // console.log(repos);
 
   return (
     <section className="projects bd-grid">
