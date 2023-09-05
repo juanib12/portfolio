@@ -22,37 +22,6 @@ const Projects = () => {
         <h1>Proyectos ✅</h1>
       </div>
       <div className="projects_list">
-        {/* {repos.map((rep) => (
-          <a
-            href={`https://${rep.homepage}`}
-            target="_blank"
-            className="links"
-            key={rep.id}
-          >
-            <div className="projects_data">
-              <div className="projects_data-images">
-                <img src={null} />
-              </div>
-              <div className="projects_data-info">
-                <div className="projects_data-title">
-                  <h2>{rep.name}</h2>
-                </div>
-                <div className="projects_data-leng">
-                  <img src={ReactChiquito} width="50px" />
-                  <img src={Mui} width="50px" />
-                </div>
-                <div className="projects_data-desc">{rep.description}</div>
-                <a href={rep.html_url} target="_blank">
-                  Repositorio Github
-                </a>
-                <a href={`https://${rep.homepage}`} target="_blank">
-                  Visitar
-                </a>
-              </div>
-            </div>
-          </a>
-        ))} */}
-
         <a
           href="https://animadle.vercel.app/"
           target="_blank"
