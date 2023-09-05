@@ -13,7 +13,7 @@ const Lenguagues = () => {
     <section className=" lenguagues bd-grid">
       <div className="lenguagues_title">
         <h2>
-          Herramientas y{" "}
+          Herramientas y
           <span style={{ color: "rgb(56 189 248)" }}>tecnologías</span> que
           actualmente utilizo
         </h2>

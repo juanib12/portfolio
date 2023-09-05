@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <section className="bd-grid">
       <div className="home">
-      <img src={Profile} alt="profile" className="avatar"/>
+        <img src={Profile} alt="profile" className="avatar"/>
         <div className="home_title">
           <h2>Hola! Soy</h2>
           <h1>Juan Bianco</h1>

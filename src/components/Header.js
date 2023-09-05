@@ -7,14 +7,14 @@ const Header = () => {
       <nav class="nav bd-grid">
         <div>
           <Link to="/" className="nav__logo">
-            Juan Bianco
+            <img src={JB} alt="logo"/>
           </Link>
         </div>
 
         <ul class="nav__list">
           <li class="nav__item">
             <Link to="/about" className="nav__link active">
-              Sobre mí
+              Sobre m&iacute;
             </Link>
           </li>
           <li class="nav__item">

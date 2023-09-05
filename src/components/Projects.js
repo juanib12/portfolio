@@ -12,14 +12,67 @@ import Mongo from "../images/mongodbicon.png";
 import findflix from "../images/findflix.png";
 import tmdb from "../images/tmdb.png";
 import firechat from "../images/firechat.png";
+import { useState, useEffect } from "react";
 
 const Projects = () => {
+  // const url = "https://api.github.com/users/juanib12/repos";
+
+  // const [repos, setRepos] = useState([]);
+  // const [lenguagesRepos, setLenguagesRepos] = useState([]);
+
+  // async function getRepos() {
+  //   let res = await fetch(url, {
+  //     headers: {
+  //       Authorization: "Bearer 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",
+  //     },
+  //   });
+  //   let repo = await res.json();
+  //   setRepos(repo);
+  // }
+
+  // useEffect(() => {
+  //   getRepos();
+  // }, []);
+
+  // console.log(repos);
+
   return (
     <section className="projects bd-grid">
       <div className="main-title">
         <h1>Proyectos ✅</h1>
       </div>
       <div className="projects_list">
+        {/* {repos.map((rep) => (
+          <a
+            href={`https://${rep.homepage}`}
+            target="_blank"
+            className="links"
+            key={rep.id}
+          >
+            <div className="projects_data">
+              <div className="projects_data-images">
+                <img src={null} />
+              </div>
+              <div className="projects_data-info">
+                <div className="projects_data-title">
+                  <h2>{rep.name}</h2>
+                </div>
+                <div className="projects_data-leng">
+                  <img src={ReactChiquito} width="50px" />
+                  <img src={Mui} width="50px" />
+                </div>
+                <div className="projects_data-desc">{rep.description}</div>
+                <a href={rep.html_url} target="_blank">
+                  Repositorio Github
+                </a>
+                <a href={`https://${rep.homepage}`} target="_blank">
+                  Visitar
+                </a>
+              </div>
+            </div>
+          </a>
+        ))} */}
+
         <a
           href="https://animadle.vercel.app/"
           target="_blank"
@@ -41,7 +94,7 @@ const Projects = () => {
                 Juego al estilo wordle, donde deberás adivinar el animal de 5
                 letras.
               </div>
-              <button>Ver más</button>
+              <a>Ver más</a>
             </div>
           </div>
         </a>
@@ -71,7 +124,7 @@ const Projects = () => {
                 App donde podrás añadir, editar o eliminar tus notas y marcarlas
                 como completado.
               </div>
-              <button>Ver más</button>
+              <a>Ver más</a>
             </div>
           </div>
         </a>
@@ -99,7 +152,7 @@ const Projects = () => {
                 App donde podrás añadir, editar o eliminar tus servicios para tu
                 negocio de servicio técnico.
               </div>
-              <button>Ver más</button>
+              <a>Ver más</a>
             </div>
           </div>
         </a>
@@ -128,7 +181,7 @@ const Projects = () => {
                 App divertida para encontrar información, servicios de streaming
                 y muchas cosas más de tus películas favoritas.
               </div>
-              <button>Ver más</button>
+              <a>Ver más</a>
             </div>
           </div>
         </a>
@@ -157,7 +210,7 @@ const Projects = () => {
                 Una app para enviar y recibir mensajes en tiempo real a los
                 usuarios que esten registrados.
               </div>
-              <button>Ver más</button>
+              <a>Ver más</a>
             </div>
           </div>
         </a>
