@@ -20,7 +20,7 @@ const Home = () => {
             Sobre mí
           </Link>
           <a
-            href="https://drive.google.com/file/d/1ZpPGIPCyo9nIgoO-mbyX1GVUUUrtsX6n/view?usp=sharing"
+            href="https://drive.google.com/file/d/1vHC4mm_HtAmk4N5x-RBBOa7nZtlX-HTH/view?usp=sharing"
             target="__blank"
             className="home_actions-cv"
           >

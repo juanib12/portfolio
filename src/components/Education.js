@@ -4,7 +4,7 @@ import udemy from '../images/udemy.png'
 
 const Education = () => {
   return (
-    <section className="bd-grid">
+    <section>
       <div className="education-title">
         <h2>Estudios y certificaciones</h2>
       </div>

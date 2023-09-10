@@ -4,30 +4,28 @@ import Lenguages from "./Lenguages";
 
 const AboutMe = () => {
   return (
-    <>
-      <section className="about bd-grid" id="about">
+    <main className="bd-grid">
+      <section className="about" id="about">
         <div className="about-title">
           <h2>Sobre mí y tecnologías que aprendí</h2>
         </div>
         <div className="about_data_title">
           <h2>¿Quién soy?</h2>
-          <p>
-            Mi nombre es Juan Ignacio Bianco, tengo 20 años y actualmente me
-            encuentro en mi ultimo año en la Universidad Tecnológica Nacional,
-            la carrera Tecnicatura Universitaria en Programación. Además estoy
-            formandome de manera autodidacta, sobre todo lo relacionado al
-            desarrollo web tanto frontend como backend y he realizado varios
-            cursos sobre React.JS y Node.JS en la plataforma Udemy.
-          </p>
-          <p>
-            Además de estudiar e informarme sobre el mundo IT, me gusta escuchar
-            música mientras disfruto de un café ☕.
-          </p>
+          <span>
+            Mi nombre es <em>Juan</em>, tengo 21 años, estudi&eacute; y me recib&iacute; como <em>t&eacute;cnico universitario
+            en programaci&oacute;n</em>, en la Universidad Tecnol&oacute;gica Nacional.
+            Adem&aacute;s estoy formandome de manera autodidacta, sobre todo lo relacionado al desarrollo
+            web tanto <em>frontend</em> como <em>backend</em> y he realizado varios cursos sobre ReactJS y NodeJS
+            en la plataforma Udemy.<br/><br/>
+
+            Adem&aacute;s de estudiar e informarme sobre el <em>mundo IT</em>, me gusta escuchar m&uacute;sica mientras
+            disfruto de un rico <em>caf&eacute; ☕</em>.
+          </span>
         </div>
       </section>
       <Lenguages />
       <Education />
-    </>
+    </main>
   );
 };
 
