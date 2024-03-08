@@ -1002,6 +1002,11 @@ aside p {
     position: relative;
   }
 
+  .cv {
+    padding: unset;
+    padding-top: 5em;
+  }
+
 }
 
 
