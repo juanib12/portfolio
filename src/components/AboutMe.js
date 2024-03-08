@@ -1,8 +1,8 @@
 import Education from "./Education";
-import Header from "./Header";
 import Lenguages from "./Lenguages";
 
 const AboutMe = () => {
+
   return (
     <main className="bd-grid">
       <section className="about" id="about">

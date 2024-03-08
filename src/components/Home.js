@@ -1,7 +1,3 @@
-import ImageTechfix from "../images/developer.png";
-import Ikbal from "../images/Ikbal.png";
-import Footer from "./Footer";
-import Header from "./Header";
 import { Link } from "react-router-dom";
 import Profile from '../images/profile.png'
 

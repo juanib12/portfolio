@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <section className="container footer-bg">
@@ -43,9 +45,9 @@ const Footer = () => {
           >
             Descargar CV
           </a>
-          <a className="footer-link" href="#contact">
+          <Link className="footer-link" to="/contact">
             Contacto
-          </a>
+          </Link>
           <a
             className="footer-link"
             href="https://eljueguitodelaserpiente.vercel.app/"
@@ -57,7 +59,7 @@ const Footer = () => {
         <div className="footer-data">
           <span className="footer-title">Redes</span>
           <div className="footer-data-link">
-            <i class="bx bxl-github text-xl"></i>
+            <i className="bx bxl-github text-xl"></i>
             <a
               className="footer-link "
               href="https://github.com/juanib12"
@@ -67,7 +69,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="footer-data-link">
-            <i class="bx bxl-instagram-alt text-xl"></i>
+            <i className="bx bxl-instagram-alt text-xl"></i>
             <a
               className="footer-link"
               href="https://www.instagram.com/bianco_juani/"
@@ -77,7 +79,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="footer-data-link">
-            <i class="bx bxl-linkedin-square text-xl"></i>
+            <i className="bx bxl-linkedin-square text-xl"></i>
             <a
               className="footer-link"
               href="https://www.linkedin.com/in/juanignaciobianco/"
@@ -87,7 +89,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="footer-data-link">
-            <i class="bx bxl-gmail text-xl"></i>
+            <i className="bx bxl-gmail text-xl"></i>
             <p>bjuan.ignacio11@gmail.com</p>
           </div>
         </div>

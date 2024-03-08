@@ -13,6 +13,7 @@ import findflix from "../images/findflix.png";
 import tmdb from "../images/tmdb.png";
 import firechat from "../images/firechat.png";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
 
@@ -43,7 +44,6 @@ const Projects = () => {
                 Juego al estilo wordle, donde deberás adivinar el animal de 5
                 letras.
               </div>
-              <a>Ver más</a>
             </div>
           </div>
         </a>
@@ -73,7 +73,6 @@ const Projects = () => {
                 App donde podrás añadir, editar o eliminar tus notas y marcarlas
                 como completado.
               </div>
-              <a>Ver más</a>
             </div>
           </div>
         </a>
@@ -101,7 +100,6 @@ const Projects = () => {
                 App donde podrás añadir, editar o eliminar tus servicios para tu
                 negocio de servicio técnico.
               </div>
-              <a>Ver más</a>
             </div>
           </div>
         </a>
@@ -130,7 +128,6 @@ const Projects = () => {
                 App divertida para encontrar información, servicios de streaming
                 y muchas cosas más de tus películas favoritas.
               </div>
-              <a>Ver más</a>
             </div>
           </div>
         </a>
@@ -159,7 +156,6 @@ const Projects = () => {
                 Una app para enviar y recibir mensajes en tiempo real a los
                 usuarios que esten registrados.
               </div>
-              <a>Ver más</a>
             </div>
           </div>
         </a>

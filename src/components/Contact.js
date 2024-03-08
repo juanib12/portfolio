@@ -2,8 +2,6 @@ import Github from "../images/gh.png";
 import IG from "../images/instagram.png";
 import Linkedin from "../images/linkedin.png";
 import Gmail from "../images/gmail.png";
-import Header from "./Header";
-import Footer from "./Footer";
 
 const Contact = () => {
   const gmailAlert = () => {

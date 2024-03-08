@@ -1,7 +1,6 @@
 import utn from '../images/logo-utn.png'
 import udemy from '../images/udemy.png'
 
-
 const Education = () => {
   return (
     <section>
