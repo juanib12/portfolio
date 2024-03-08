@@ -253,6 +253,12 @@ img {
   margin-top: 10px;
 }
 
+.home_actions.cv-actions {
+  width: 100%;
+  justify-content: center;
+  margin-block: 5em;
+}
+
 .home_actions-cv {
   border-radius: 5em;
   background-color: #fbc531;
@@ -879,6 +885,9 @@ aside p {
 	margin-bottom: 1em;
 }
 
+.cv {
+  padding: 10em 20em 0em 20em;
+}
 
 /*------------------------------------------------*/
 

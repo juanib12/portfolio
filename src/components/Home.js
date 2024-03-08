@@ -15,13 +15,12 @@ const Home = () => {
           <Link to="/about" className="home_actions-about">
             Sobre mí
           </Link>
-          <a
-            href="https://drive.google.com/file/d/1vHC4mm_HtAmk4N5x-RBBOa7nZtlX-HTH/view?usp=sharing"
-            target="__blank"
+          <Link
+            to="/cv"
             className="home_actions-cv"
           >
             Descargar CV
-          </a>
+          </Link>
         </div>
       </div>
     </section>

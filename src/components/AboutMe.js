@@ -12,7 +12,8 @@ const AboutMe = () => {
         <div className="about_data_title">
           <h2>¿Quién soy?</h2>
           <span>
-            Mi nombre es <em>Juan</em>, tengo 21 años, estudi&eacute; y me recib&iacute; como <em>t&eacute;cnico universitario
+            Mi nombre es <em>Juan</em>, tengo 21 años, cuento con aproximadamente 1 año de experiencia como Desarrollador Fullstack y
+            me recib&iacute; como <em>t&eacute;cnico universitario
             en programaci&oacute;n</em>, en la Universidad Tecnol&oacute;gica Nacional.
             Adem&aacute;s estoy formandome de manera autodidacta, sobre todo lo relacionado al desarrollo
             web tanto <em>frontend</em> como <em>backend</em> y he realizado varios cursos sobre ReactJS y NodeJS

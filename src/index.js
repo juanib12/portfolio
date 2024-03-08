@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
+import CV from "./components/CV";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +21,7 @@ root.render(
         <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cv" element={<CV />} />
       </Routes>
       <Footer />
     </React.StrictMode>
