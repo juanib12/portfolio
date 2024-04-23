@@ -1,16 +1,25 @@
 import utn from '../images/logo-utn.png'
 import udemy from '../images/udemy.png'
+import untref from '../images/untref.png';
 
 const Education = () => {
   return (
     <section>
       <div className="education-title">
-        <h2>Estudios y certificaciones</h2>
+        <h2>Titulos y certificaciones</h2>
       </div>
       <div className="education-data">
         <div className="education-card">
           <div className="ed-card-title">
             <h3>Educación</h3>
+          </div>
+          <div className="ed-card-container">
+            <img src={untref} alt="untref" width="50" height="50" />
+            <div className="ed-card-data">
+              <h4>Universidad Nacional de Tres de Febrero</h4>
+              <p>Diplomatura Universitaria en Desarrollo Backend</p>
+              <p className="ed-card-data-extra">2024 - Actualidad</p>
+            </div>
           </div>
           <div className="ed-card-container">
             <img src={utn} alt="utn" width="50" height="50" />
@@ -25,6 +34,15 @@ const Education = () => {
         <div className="education-card">
           <div className="ed-card-title">
             <h3>Licencias y certificaciones</h3>
+          </div>
+          <div className="ed-card-container">
+            <img src={udemy} alt="udemy" width="50" height="50" />
+            <div className="ed-card-data">
+              <h4>Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero</h4>
+              <p>Udemy</p>
+              <p className="ed-card-data-extra">Realizado: Octubre 2023</p>
+              <a href="https://www.udemy.com/certificate/UC-17a141b7-3b5d-4ae6-af70-5615f223ffeb/" target="__blank">Mostrar credencial</a>
+            </div>
           </div>
           <div className="ed-card-container">
             <img src={udemy} alt="udemy" width="50" height="50" />

@@ -1,0 +1,134 @@
+/*------------------------------------------------*/
+
+.myway {
+    margin-top: 6em;
+}
+
+.myway > div {
+    margin-top: 2em;
+    position: relative;
+}
+
+.myway > div > span {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.myway > header {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.myway > header strong {
+    font-size: 2em;
+}
+
+.timeline-container {
+    width: 80%;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+  
+.timeline-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: rgb(56 189 248);
+    z-index: 1;
+}
+  
+.timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+    margin-top: 5em;
+}
+  
+.timeline-block-right {
+    float: right;
+}
+  
+.timeline-block-left {
+    float: left;
+    direction: rtl
+}
+  
+.marker {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: #4FC1E9;
+    margin-top: 10px;
+    z-index: 120;
+}
+
+.timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.timeline-content > header {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-content > header em {
+    font-size: 0.75em;
+}
+
+.timeline-content > header strong {
+    
+}
+
+.timeline-content > header span {
+    font-size: 0.9em;
+    color: white;
+    font-weight: 600;
+}
+
+.timeline-content > article p {
+    color: #e1e1e1;
+}
+
+@media screen and (max-width: 767px) {
+    .timeline-container:before {
+        left: 8px;
+        width: 2px;
+    }
+    .timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .timeline-block-right {
+        float: none;
+    }
+    
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+    }
+}

@@ -18,7 +18,6 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<App />}/>
-        <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<CV />} />

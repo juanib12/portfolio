@@ -12,9 +12,9 @@ const Home = () => {
           <h3>Full Stack Developer 💻</h3>
         </div>
         <div className="home_actions">
-          <Link to="/about" className="home_actions-about">
+          <a href="#sobremi" className="home_actions-about">
             Sobre mí
-          </Link>
+          </a>
           <Link
             to="/cv"
             className="home_actions-cv"

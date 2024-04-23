@@ -8,6 +8,12 @@ import tailwind from "../images/tailwind.png";
 import react from "../images/reactlogo.png";
 import mongo from "../images/mongodb.png";
 import angular from "../images/angular.png"
+import net from '../images/net.png'
+import sql from '../images/sql.png'
+import git from '../images/git.png'
+import vscode from '../images/vscode.png'
+import vs from '../images/vs.png'
+import csharp from '../images/csharp.png'
 
 const Lenguagues = () => {
   return (
@@ -22,7 +28,26 @@ const Lenguagues = () => {
         </h2>
       </div>
 
-      <ul id="cards" className="lenguagues_data">
+      <ul id="cards" data-numcards="6" className="lenguagues_data">
+        <li className="card-title">
+          <header>
+            <strong>Frontend</strong>
+          </header>
+        </li>
+        <li className="card" id="card_8">
+          <div className="card__content">
+            <div className="lenguagues_images">
+              <img src={react} />
+            </div>
+          </div>
+        </li>        
+        <li className="card" id="card_9">
+          <div className="card__content">
+            <div className="lenguagues_images">
+              <img style={{width: "256px"}} src={angular} />
+            </div>
+          </div>
+        </li>
         <li className="card" id="card_1">
           <div className="card__content">
             <div className="lenguagues_images">
@@ -44,12 +69,47 @@ const Lenguagues = () => {
             </div>
           </div>
         </li>
+        <li className="card" id="card_7">
+          <div className="card__content">
+            <div className="lenguagues_images">
+              <img src={tailwind} />
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul id="cards" data-numcards="3" className="lenguagues_data">
+        <li className="card-title">
+          <header>
+            <strong>Backend</strong>
+          </header>
+        </li>
         <li className="card" id="card_4">
           <div className="card__content">
             <div className="lenguagues_images">
               <img src={node} />
             </div>
           </div>
+        </li>
+        <li className="card" id="card_4">
+          <div className="card__content">
+            <div className="lenguagues_images">
+              <img src={net} />
+            </div>
+          </div>
+        </li>
+        <li className="card" id="card_4">
+          <div className="card__content">
+            <div className="lenguagues_images">
+              <img src={csharp} />
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul id="cards" data-numcards="3" className="lenguagues_data">
+        <li className="card-title"> 
+          <header>
+            <strong>Bases de datos</strong>
+          </header>
         </li>
         <li className="card" id="card_5">
           <div className="card__content">
@@ -58,31 +118,10 @@ const Lenguagues = () => {
             </div>
           </div>
         </li>
-        <li className="card" id="card_6">
+        <li className="card" id="card_5">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={gh} />
-            </div>
-          </div>
-        </li>
-        <li className="card" id="card_7">
-          <div className="card__content">
-            <div className="lenguagues_images">
-              <img src={tailwind} />
-            </div>
-          </div>
-        </li>
-        <li className="card" id="card_8">
-          <div className="card__content">
-            <div className="lenguagues_images">
-              <img src={react} />
-            </div>
-          </div>
-        </li>        
-        <li className="card" id="card_9">
-          <div className="card__content">
-            <div className="lenguagues_images">
-              <img style={{width: "256px"}} src={angular} />
+              <img src={sql} />
             </div>
           </div>
         </li>
@@ -94,11 +133,46 @@ const Lenguagues = () => {
           </div>
         </li>
       </ul>
+      <ul id="cards" data-numcards ="4" className="lenguagues_data">
+        <li className="card-title">
+          <header>
+            <strong>Herramientas</strong>
+          </header>
+        </li>
+        <li className="card" id="card_6">
+          <div className="card__content">
+            <div className="lenguagues_images">
+              <img src={gh} />
+            </div>
+          </div>
+        </li>
+        <li className="card" id="card_6">
+          <div className="card__content">
+            <div className="lenguagues_images">
+              <img src={git} />
+            </div>
+          </div>
+        </li>
+        <li className="card" id="card_6">
+          <div className="card__content">
+            <div className="lenguagues_images">
+              <img src={vscode} />
+            </div>
+          </div>
+        </li>
+        <li className="card" id="card_6">
+          <div className="card__content">
+            <div className="lenguagues_images">
+              <img src={vs} />
+            </div>
+          </div>
+        </li>
+      </ul>
       <div className="lenguagues_footer">
         <p>
           Además de estas tecnologías también he aprendido y utilizado 
           <span style={{ color: "rgb(56 189 248)" }}>
-            <br></br>C# - C++ - C - .NET Framework - .NET Core - SQL Server.
+            <br></br>C++ - C - Vue.js - RethinkDB - TypeScript - Figma
           </span>
         </p>
       </div>

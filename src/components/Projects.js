@@ -17,32 +17,44 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
 
+  const [repos, setRepos] = useState([]);
+    
+  useEffect(() => {
+      fetch('https://api.github.com/users/juanib12/repos')
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+  })
+
+
   return (
     <section className="projects bd-grid">
       <div className="main-title">
         <h1>Proyectos ✅</h1>
       </div>
       <div className="projects_list">
-        <a
-          href="https://animadle.vercel.app/"
+      <a
           target="_blank"
+          href="https://findflix.vercel.app/"
           className="links"
         >
           <div className="projects_data">
             <div className="projects_data-images">
-              <img src={Animadle} />
+              <img src={findflix} />
             </div>
             <div className="projects_data-info">
               <div className="projects_data-title">
-                <h2>Animadle</h2>
+                <h2>FindFlix</h2>
+              </div>
+              <div className="projects_data-responsive">
+                <p>Responsive</p>
               </div>
               <div className="projects_data-leng">
                 <img src={ReactChiquito} width="50px" />
-                <img src={Mui} width="50px" />
+                <img src={tmdb} width="50px" />
               </div>
               <div className="projects_data-desc">
-                Juego al estilo wordle, donde deberás adivinar el animal de 5
-                letras.
+                App divertida para encontrar información, servicios de streaming
+                y muchas cosas más de tus películas favoritas.
               </div>
             </div>
           </div>
@@ -78,6 +90,31 @@ const Projects = () => {
         </a>
 
         <a
+          href="https://animadle.vercel.app/"
+          target="_blank"
+          className="links"
+        >
+          <div className="projects_data">
+            <div className="projects_data-images">
+              <img src={Animadle} />
+            </div>
+            <div className="projects_data-info">
+              <div className="projects_data-title">
+                <h2>Animadle</h2>
+              </div>
+              <div className="projects_data-leng">
+                <img src={ReactChiquito} width="50px" />
+                <img src={Mui} width="50px" />
+              </div>
+              <div className="projects_data-desc">
+                Juego al estilo wordle, donde deberás adivinar el animal de 5
+                letras.
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a
           target="_blank"
           href="https://techfix-demo.vercel.app/"
           className="links"
@@ -99,34 +136,6 @@ const Projects = () => {
               <div className="projects_data-desc">
                 App donde podrás añadir, editar o eliminar tus servicios para tu
                 negocio de servicio técnico.
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a
-          target="_blank"
-          href="https://findflix.vercel.app/"
-          className="links"
-        >
-          <div className="projects_data">
-            <div className="projects_data-images">
-              <img src={findflix} />
-            </div>
-            <div className="projects_data-info">
-              <div className="projects_data-title">
-                <h2>FindFlix</h2>
-              </div>
-              <div className="projects_data-responsive">
-                <p>Responsive</p>
-              </div>
-              <div className="projects_data-leng">
-                <img src={ReactChiquito} width="50px" />
-                <img src={tmdb} width="50px" />
-              </div>
-              <div className="projects_data-desc">
-                App divertida para encontrar información, servicios de streaming
-                y muchas cosas más de tus películas favoritas.
               </div>
             </div>
           </div>

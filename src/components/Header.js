@@ -1,8 +1,10 @@
 import { useState } from "react";
 import JB from "../images/jb.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+
   const [active, setActive] = useState({
     about: '',
     projects: '',
@@ -26,9 +28,15 @@ const Header = () => {
 
         <ul className="nav__list">
           <li className="nav__item">
-            <Link to="/about" className={`nav__link ${active.about}`} onClick={((e) => onClick('about'))} >
-              Sobre m&iacute;
-            </Link>
+            {location.pathname != "/" ? (
+              <Link to="/" className={`nav__link ${active.about}`} onClick={((e) => onClick('about'))} >
+                Sobre m&iacute;
+              </Link>
+            ) : (
+              <a href="#sobremi" className={`nav__link ${active.about}`} onClick={((e) => onClick('about'))} >
+                Sobre m&iacute;
+              </a>
+            )}
           </li>
           <li className="nav__item">
             <Link to="/projects" className={`nav__link ${active.projects}`} onClick={((e) => onClick('projects'))} >
