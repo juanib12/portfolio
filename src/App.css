@@ -68,7 +68,6 @@ html {
 }
 
 body {
-  margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: #E3F7F7;
@@ -99,6 +98,19 @@ img {
   display: block;
 }
 
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, 1);
+  background-image: radial-gradient(at 26% 24%, hsla(194, 83%, 60%, 1) 0px, transparent 50%), radial-gradient(at 71% 78%, hsla(242, 100%, 70%, 1) 0px, transparent 50%);
+  mask-image: linear-gradient(black 80%, transparent);
+}
+
 /*===== LAYOUT =====*/
 .bd-grid {
   /* max-width: 1280px; */
@@ -113,9 +125,9 @@ img {
   top: 0;
   left: 0;
   z-index: 900;
-
-  background-color: #000;
+  transition: all 0.5s ease;
 }
+
 
 .projects {
   padding: 0 2em;
@@ -650,7 +662,7 @@ img {
 .education-data{
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: left;
   margin-bottom: 5em;
 
@@ -674,7 +686,7 @@ img {
 .ed-card-container{
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start;
   justify-content: left;
   width: 100%;
   margin-top: 15px;
@@ -1025,10 +1037,6 @@ aside p {
     gap: 0.5em;
   }
 
-  .nav__list .nav__item {
-
-  }
-
   .nav__link {
     padding: 0 1em;
   }
@@ -1045,7 +1053,8 @@ aside p {
 
   .l-header {
     background-color: unset;
-    position: relative;
+    position: sticky;
+    padding: 1em 0;
   }
 
   .cv {

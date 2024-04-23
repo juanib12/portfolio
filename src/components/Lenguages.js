@@ -18,7 +18,6 @@ import csharp from '../images/csharp.png'
 const Lenguagues = () => {
   return (
     <section className=" lenguagues">
-      <input type="checkbox" id="debug" />
       
       <div className="lenguagues_title">
         <h2>

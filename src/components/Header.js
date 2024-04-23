@@ -10,15 +10,26 @@ const Header = () => {
     projects: '',
     contact: ''
   })
+  const [style, setStyle] = useState("")
 
   const onClick = (name) => {
     setActive({
       [name]: 'active'
     });
   }
+  
+  const onScroll = () => {
+    if((window.scrollY === 0)) {
+      setStyle("transparent");
+    } else {
+      setStyle("#000");
+    }
+  }
+
+  window.addEventListener('scroll', onScroll)
 
   return (
-    <header className="l-header">
+    <header className="l-header" style={{background: style}}>
       <nav className="nav bd-grid">
         <div>
           <Link to="/" className="nav__logo" onClick={((e) => onClick(''))}>
@@ -28,7 +39,7 @@ const Header = () => {
 
         <ul className="nav__list">
           <li className="nav__item">
-            {location.pathname != "/" ? (
+            {location.pathname !== "/" ? (
               <Link to="/" className={`nav__link ${active.about}`} onClick={((e) => onClick('about'))} >
                 Sobre m&iacute;
               </Link>
