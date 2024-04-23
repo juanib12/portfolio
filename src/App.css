@@ -223,12 +223,11 @@ img {
 }
 
 .avatar {
-  width: 150px;
-  height: 150px;
+  margin-bottom: 1em;
   transition: 150ms ease-in-out;
   border-radius: 50%;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  border: 4px solid #E3F7F7;
+  border: 4px solid #48c6ef;
 }
 
 
