@@ -4,9 +4,6 @@ import Linkedin from "../images/linkedin.png";
 import Gmail from "../images/gmail.png";
 
 const Contact = () => {
-  const gmailAlert = () => {
-    alert("Mi email: bjuan.ignacio11@gmail.com");
-  };
 
   return (
       <>
@@ -32,9 +29,14 @@ const Contact = () => {
                   <img src={Linkedin} loading="lazy" alt="logo ge" />
                 </div>
               </a>
-              <div onClick={gmailAlert} className="contact-data-images">
-                <img src={Gmail} loading="lazy" alt="logo ge" />
-              </div>
+              <a
+                href="mailto:bjuan.ignacio11@gmail.com"
+                target="__blank"
+              >
+                <div className="contact-data-images">
+                  <img src={Gmail} loading="lazy" alt="logo ge" />
+                </div>
+              </a>
             </div>
           </div>
         </section>

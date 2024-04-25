@@ -36,42 +36,42 @@ const Lenguagues = () => {
         <li className="card" id="card_8">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={react} />
+              <img src={react} alt="react"/>
             </div>
           </div>
         </li>        
         <li className="card" id="card_9">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img style={{width: "256px"}} src={angular} />
+              <img style={{width: "256px"}} src={angular} alt="angular"/>
             </div>
           </div>
         </li>
         <li className="card" id="card_1">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={JS} />
+              <img src={JS} alt="js"/>
             </div>
           </div>
         </li>
         <li className="card" id="card_2">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={html} />
+              <img src={html} alt="lenguage-img"/>
             </div>
           </div>
         </li>
         <li className="card" id="card_3">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={css} />
+              <img src={css} alt="lenguage-img"/>
             </div>
           </div>
         </li>
         <li className="card" id="card_7">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={tailwind} />
+              <img src={tailwind} alt="lenguage-img"/>
             </div>
           </div>
         </li>
@@ -85,21 +85,21 @@ const Lenguagues = () => {
         <li className="card" id="card_4">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={node} />
+              <img src={node} alt="lenguage-img"/>
             </div>
           </div>
         </li>
         <li className="card" id="card_4">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={net} />
+              <img src={net} alt="lenguage-img"/>
             </div>
           </div>
         </li>
         <li className="card" id="card_4">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={csharp} />
+              <img src={csharp} alt="lenguage-img"/>
             </div>
           </div>
         </li>
@@ -113,21 +113,21 @@ const Lenguagues = () => {
         <li className="card" id="card_5">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={mysql} />
+              <img src={mysql} alt="lenguage-img"/>
             </div>
           </div>
         </li>
         <li className="card" id="card_5">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={sql} />
+              <img src={sql} alt="lenguage-img"/>
             </div>
           </div>
         </li>
         <li className="card" id="card_10">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={mongo} />
+              <img src={mongo} alt="lenguage-img"/>
             </div>
           </div>
         </li>
@@ -141,28 +141,28 @@ const Lenguagues = () => {
         <li className="card" id="card_6">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={gh} />
+              <img src={gh} alt="lenguage-img"/>
             </div>
           </div>
         </li>
         <li className="card" id="card_6">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={git} />
+              <img src={git} alt="lenguage-img"/>
             </div>
           </div>
         </li>
         <li className="card" id="card_6">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={vscode} />
+              <img src={vscode} alt="lenguage-img"/>
             </div>
           </div>
         </li>
         <li className="card" id="card_6">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={vs} />
+              <img src={vs} alt="lenguage-img"/>
             </div>
           </div>
         </li>

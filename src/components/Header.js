@@ -16,6 +16,8 @@ const Header = () => {
     setActive({
       [name]: 'active'
     });
+
+    window.scrollTo(top)
   }
   
   const onScroll = () => {
