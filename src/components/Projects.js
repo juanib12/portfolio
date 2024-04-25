@@ -21,8 +21,6 @@ const Projects = () => {
       .then((data) => setRepos(data))
   })
 
-  console.log(repos)
-
   return (
     <>
       <div className="background"></div>
