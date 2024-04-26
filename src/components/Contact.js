@@ -12,7 +12,7 @@ const Contact = () => {
           <div className="contact">
             <header className="contact-title">
               <p>
-                Gracias por visitar mi página!
+                ¡Gracias por visitar mi página!
                 <br />
                 <br />
                 Si tienes alguna pregunta o necesitas ayuda con un proyecto web, ¡no dudes en ponerte en contacto conmigo! 
