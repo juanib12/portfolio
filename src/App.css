@@ -616,6 +616,17 @@ img {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+.contact-title {
+  border: 4px solid #e1e1e1;
+  padding: 1em;
+  border-radius: 1em;
+  width: 100%;
+  background-color: #0006;
 }
 
 .contact-data_list {

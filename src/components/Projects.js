@@ -19,7 +19,7 @@ const Projects = () => {
       fetch('https://api.github.com/users/juanib12/repos')
       .then((res) => res.json())
       .then((data) => setRepos(data))
-  })
+  }, [])
 
   return (
     <>
