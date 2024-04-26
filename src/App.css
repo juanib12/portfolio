@@ -1034,6 +1034,10 @@ aside p {
     height: 100%;
   }
 
+  .contact-title {
+    width: 88%;
+  }
+
   .contact-data_list {
     width: 100%;
   }
