@@ -26,7 +26,7 @@ const Projects = () => {
       <div className="background"></div>
       <section className="projects bd-grid">
         <div className="main-title">
-          <h1>Proyectos ✅</h1>
+          <h1>Proyectos</h1>
         </div>
         <div className="projects_list">
         <a
