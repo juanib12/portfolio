@@ -60,7 +60,7 @@ const MyWay = () => {
                         <section className="timeline-content">
                             <header>
                                 <em>Mayo - 2023</em>
-                                <strong style={{ color: "rgb(56 189 248)" }}>¡Terminó mis estudios!</strong>
+                                <strong style={{ color: "rgb(56 189 248)" }}>Terminó mis estudios</strong>
                                 <span>Universidad Tecnologica Nacional</span>
                             </header>
                             <article>
