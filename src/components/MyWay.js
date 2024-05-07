@@ -39,7 +39,7 @@ const MyWay = () => {
                         <div className="marker"></div>
                         <section className="timeline-content">
                             <header>
-                                <em>Mayo - 2023</em>
+                                <em>Mayo - 2023 / Mayo - 2024</em>
                                 <strong style={{ color: "rgb(56 189 248)" }}>Desarrollador Fullstack</strong>
                                 <span>Craving - Consultora de Software</span>
                             </header>
