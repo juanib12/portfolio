@@ -10,6 +10,10 @@ import findflix from "../images/findflix.png";
 import tmdb from "../images/tmdb.png";
 import firechat from "../images/firechat.png";
 import { useState, useEffect } from "react";
+import resdev from '../images/resdev.png'
+import JS from "../images/javascript.png";
+import html from "../images/html.png";
+import css from "../images/css.png";
 
 const Projects = () => {
 
@@ -83,6 +87,36 @@ const Projects = () => {
                 <div className="projects_data-desc">
                   App donde podrás añadir, editar o eliminar tus notas y marcarlas
                   como completado.
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            target="_blank"
+            href="https://resolvedev.com"
+            className="links"
+            rel="noreferrer"
+          >
+            <div className="projects_data">
+              <div className="projects_data-images">
+                <img src={resdev} alt="todo"/>
+              </div>
+              <div className="projects_data-info">
+                <div className="projects_data-title">
+                  <h2>Resolve Dev - Desarrollo web & Soluciones tecnológicas</h2>
+                </div>
+                <div className="projects_data-responsive">
+                  <p>Responsive</p>
+                </div>
+                <div className="projects_data-leng">
+                  <img src={JS} width="50px" alt="javascript"/>
+                  <img src={html} width="50px" alt="html"/>
+                  <img src={css} width="50px" alt="css"/>
+                </div>
+                <div className="projects_data-desc">
+                  Sitio web de mi equipo de desarrolladores donde ofrecemos servicios
+                  de desarrollo web, creación de tiendas online y desarrollo a medida.
                 </div>
               </div>
             </div>
