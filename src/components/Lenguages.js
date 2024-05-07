@@ -120,7 +120,7 @@ const Lenguagues = () => {
         <li className="card" id="card_5">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={sql} alt="lenguage-img"/>
+              <img style={{height: "16em"}} src={sql} alt="lenguage-img"/>
             </div>
           </div>
         </li>
