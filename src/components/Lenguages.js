@@ -171,7 +171,7 @@ const Lenguagues = () => {
         <p>
           Además de estas tecnologías también he aprendido y utilizado 
           <span style={{ color: "rgb(56 189 248)" }}>
-            <br></br>C++ - C - Vue.js - RethinkDB - TypeScript - Figma
+            <br></br>PHP - C++ - C - Vue.js - RethinkDB - TypeScript - Figma
           </span>
         </p>
       </div>
