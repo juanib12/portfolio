@@ -13,7 +13,7 @@ const AboutMe = () => {
         <div className="about_data_title">
           <h2>¿Quién soy?</h2>
           <span>
-            Soy un apasionado <em style={{ color: "rgb(56 189 248)" }}>desarrollador fullstack</em > cocreador de <a href="https://www.resolvedev.com/" target="_blank" style={{ color: "rgb(56 189 248)" }}>Resolve Dev</a>, enfocado especialmente en la creaci&oacute;n de soluciones web robustas y eficientes.
+            Soy un apasionado <em style={{ color: "rgb(56 189 248)" }}>desarrollador fullstack</em > cocreador de <a href="https://www.resolvedev.com/" target="_blank" style={{ color: "rgb(56 189 248)", borderBottom: "1px solid rgb(56 189 248)" }} rel="noreferrer">Resolve Dev</a>, enfocado especialmente en la creaci&oacute;n de soluciones web robustas y eficientes.
             Mi conjunto de habilidades abarca diversas tecnolog&iacute;as claves en el desarrollo moderno, desde el dinamismo y la versatilidad de <em style={{ color: "rgb(56 189 248)" }}>React.js y Angular</em>, 
             hasta el s&oacute;lido fundamento de <em style={{ color: "rgb(56 189 248)" }}>JavaScript, HTML y CSS</em>. Tengo la capacidad de crear interfaces atractivas y funcionales que cumplan con las necesidades del usuario.
             <br/><br/>
