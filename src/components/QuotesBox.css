@@ -7,9 +7,17 @@
 }
 
 .quotes-container label {
-    padding: 1.5em 1.75em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     border-radius: 50%;
+}
+
+.quotes-container label i {
+    padding: .5em;
+    font-size: 2em;
 }
 
 input#btn-bot {
