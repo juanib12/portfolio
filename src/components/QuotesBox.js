@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react"
+import './QuotesBox.css';
 import axios from 'axios';
 
 const QuotesBox = () => {
@@ -54,12 +55,12 @@ const QuotesBox = () => {
         }
       };
     return (
-      <div className="chat-container">
+      <div className="quotes-container">
         <label htmlFor='btn-bot'>
           <i className='bx bxs-bot'></i>
         </label>
-        <input type='radio' id='btn-bot' name='btn-bot'/>
-        <article>
+        <input type='checkbox' id='btn-bot' name='btn-bot'/>
+        <article className="quotes-box">
           <div className="messages-container">
               {messages.map((message, index) => (
               <p key={index} className={`message ${message.role}`}>
