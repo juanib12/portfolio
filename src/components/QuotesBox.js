@@ -15,10 +15,9 @@ const QuotesBox = () => {
 
   const sendMessage = async () => {
     setIsLoading(true)
-    const userMessage = input;
     setMessages((prevMessages) => [
       ...prevMessages,
-      { role: "user", content: userMessage },
+      { role: "user", content: "" },
     ]);
 
     try {
