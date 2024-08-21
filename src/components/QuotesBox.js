@@ -21,7 +21,7 @@ const QuotesBox = () => {
     ]);
 
     try {
-      const apiUrl = `http://localhost:3008/chat`; // Ensure this matches your API endpoint for sending messages
+      const apiUrl = `${process.env.URLAPI}/chat`; // Ensure this matches your API endpoint for sending messages
       const requestBody = {
         message: "Di una frase que sirva como tip para desarrolladores fullstack, ahorrate el saludo y di directo la frase",
       };
@@ -53,10 +53,12 @@ const QuotesBox = () => {
   };
 
   useEffect(() => {
-    setInterval(() => {
+    // setInterval(() => {
+      const url_api = process.env.URL_API;
+      console.log(url_api)
       sendMessage()
-    }, 10000);
-  })
+    // }, 10000);
+  }, [])
 
   return (
     <div className="quotes-container">
