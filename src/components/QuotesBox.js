@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "react"
 import './QuotesBox.css';
 import axios from 'axios';
 
+
 const QuotesBox = () => {
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -20,8 +21,10 @@ const QuotesBox = () => {
       { role: "user", content: "" },
     ]);
 
+    console.log(process.env.REACT_APP_URL_API)
+
     try {
-      const apiUrl = `${process.env.URL_API}/chat`; // Ensure this matches your API endpoint for sending messages
+      const apiUrl = `${process.env.REACT_APP_URL_API}/chat`; // Ensure this matches your API endpoint for sending messages
       const requestBody = {
         message: "Di una frase que sirva como tip para desarrolladores fullstack, ahorrate el saludo y di directo la frase",
       };
@@ -54,8 +57,6 @@ const QuotesBox = () => {
 
   useEffect(() => {
     // setInterval(() => {
-      const url_api = process.env.URL_API;
-      console.log(url_api)
       sendMessage()
     // }, 10000);
   }, [])
