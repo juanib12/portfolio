@@ -21,7 +21,7 @@ const QuotesBox = () => {
     ]);
 
     try {
-      const apiUrl = `${process.env.URLAPI}/chat`; // Ensure this matches your API endpoint for sending messages
+      const apiUrl = `${process.env.URL_API}/chat`; // Ensure this matches your API endpoint for sending messages
       const requestBody = {
         message: "Di una frase que sirva como tip para desarrolladores fullstack, ahorrate el saludo y di directo la frase",
       };
