@@ -10,7 +10,7 @@ import findflix from "../images/findflix.png";
 import redlimit from "../images/redlimit.jpg";
 import tmdb from "../images/tmdb.png";
 import firechat from "../images/firechat.png";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import resdev from '../images/resdev.png'
 import JS from "../images/javascript.png";
 import PHP from "../images/PHP.png";
@@ -19,7 +19,7 @@ import css from "../images/css.png";
 
 const Projects = () => {
 
-  const [repos, setRepos] = useState([]);
+  // const [repos, setRepos] = useState([]);
     
   useEffect(() => {
       fetch('https://api.github.com/users/juanib12/repos')

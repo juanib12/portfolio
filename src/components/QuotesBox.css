@@ -1,0 +1,39 @@
+
+.quotes-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2em;
+}
+
+.quotes-container label {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.quotes-container label i {
+    padding: .5em;
+    font-size: 2em;
+}
+
+input#btn-bot {
+    display: none;
+}
+
+input#btn-bot + article {
+    display: none;
+}
+
+input#btn-bot:checked + article {
+    display: flex;
+}
+
+.quotes-box {
+    align-items: center;
+    width: 100%;
+    padding: 2em;
+}
