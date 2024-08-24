@@ -11,7 +11,7 @@ const QuotesBox = () => {
   const scrollToBottom = () => {
       messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-  
+
   useEffect(scrollToBottom, [messages]);
 
   const sendMessage = async () => {
@@ -26,45 +26,44 @@ const QuotesBox = () => {
     try {
       const apiUrl = `${process.env.REACT_APP_URL_API}/chat`; // Ensure this matches your API endpoint for sending messages
       const requestBody = {
-        message: "Di una frase que sirva como tip para desarrolladores fullstack, ahorrate el saludo y di directo la frase",
+        message: "Di una frase que sirva como tip para desarrolladores fullstack, tiene que ser de menos de 50 caracteres, ahorrate el saludo y di directo la frase",
       };
 
       const { data } = await axios.post(apiUrl, requestBody);
       console.log(data);
 
-      // Extracting the bot's response from the nested structure
       const botResponse = data;
 
-      // Assuming 'data' contains the bot's response in a manner you expect
       setMessages((prevMessages) => [
         ...prevMessages,
         { role: "bot", content: botResponse },
       ]);
     } catch (error) {
       console.error("Error sending message:", error);
-      // Optionally handle the error visually in the chat
       setMessages((prevMessages) => [
         ...prevMessages,
         {
           role: "bot",
-          content: "Sorry, there was an error processing your message.",
+          content: "Ocurrio un error, intentelo nuevamente.",
         },
       ]);
     } finally {
-      setIsLoading(false); // End loading regardless of outcome
+      setIsLoading(false);
     }
   };
 
+  const rechargeApi = () => {
+    sendMessage()
+  }  
+
   useEffect(() => {
-    // setInterval(() => {
       sendMessage()
-    // }, 10000);
   }, [])
 
   return (
     <ul className="quotes-container">
       <li>
-        <label htmlFor='btn-bot'>
+        <label htmlFor='btn-bot' onMouseEnter={rechargeApi}>
           <i className='bx bxs-bot'></i>
           <article className="quotes-box">
             <div className="messages-container">
