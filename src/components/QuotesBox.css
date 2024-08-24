@@ -18,6 +18,11 @@
     opacity: .85;
 }
 
+.quotes-container label:hover {
+    border: 2px solid #48c6ef;
+    background-color: transparent;
+}
+
 .quotes-container label i {
     padding: .5em;
     font-size: 2em;
@@ -31,7 +36,7 @@
     transition: all .5s ease;
 }
 
-.quotes-container label:hover article {
+.quotes-container label i:hover + article {
     background-color: #000;
     border-radius: 1em;
     display: flex;
@@ -39,7 +44,7 @@
     max-height: 7em;
     width: 12em;
     overflow-y: auto;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .quotes-box {
