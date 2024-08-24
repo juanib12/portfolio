@@ -48,7 +48,11 @@
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 0.8em;
+  width: 0.5em;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #48c6ef;
 }
 
 html {
