@@ -23,7 +23,7 @@ const QuotesBox = () => {
     try {
       const apiUrl = `${process.env.REACT_APP_URL_API}/chat`; // Ensure this matches your API endpoint for sending messages
       const requestBody = {
-        message: "Di una frase que sirva como tip para desarrolladores fullstack, tiene que ser de menos de 50 caracteres, ahorrate el saludo y di directo la frase",
+        message: "Di una frase que sirva como tip para desarrolladores fullstack, tiene que ser de menos de 50 caracteres e intenta no repetir las mismas frases, ahorrate el saludo y di directo la frase",
       };
 
       const { data } = await axios.post(apiUrl, requestBody);

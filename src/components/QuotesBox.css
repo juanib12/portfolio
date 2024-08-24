@@ -14,7 +14,7 @@
     padding: 0em;
     background-color: #48c6ef;
     border: 0.325em solid #48c6ef;
-    opacity: .6;
+    opacity: .85;
 }
 
 .quotes-container label i {
@@ -34,7 +34,7 @@
 
 .quotes-container label:hover article {
     display: flex;
-    height: max-content;
+    height: 14em;
     width: 12em;
     background-color: black;
     border-radius: 1em;
