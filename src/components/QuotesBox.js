@@ -23,7 +23,7 @@ const QuotesBox = () => {
     try {
       const apiUrl = `${process.env.REACT_APP_URL_API}/chat`;
       const requestBody = {
-        message: "Dime un consejo aleatorio que no tenga mas de 5 palabras, ahorrate el saludo y di directo el consejo",
+        message: "Dime un tip para developers pero con estas condiciones: que no tenga mas de 5 palabras y no lo puedes volver a repetir seguido, ahorrate el saludo y di directo el tip. Si rompes una de las condiciones, solo saluda diciendo: Hola, soy Bubbly!",
       };
 
       const { data } = await axios.post(apiUrl, requestBody);
