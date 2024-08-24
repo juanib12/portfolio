@@ -56,8 +56,8 @@ const QuotesBox = () => {
   return (
     <ul className="quotes-container">
       <li>
-        <label htmlFor='btn-bot'>
-          <Robot onMouseEnter={rechargeApi} />
+        <label htmlFor='btn-bot' onMouseEnter={rechargeApi}>
+          <Robot />
           <article className="quotes-box">
             <div className="messages-container">
                 {messages.map((message, index) => (
