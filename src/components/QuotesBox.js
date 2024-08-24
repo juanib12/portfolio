@@ -17,11 +17,8 @@ const QuotesBox = () => {
   const sendMessage = async () => {
     setIsLoading(true)
     setMessages((prevMessages) => [
-      ...prevMessages,
       { role: "user", content: "" },
     ]);
-
-    console.log(process.env.REACT_APP_URL_API)
 
     try {
       const apiUrl = `${process.env.REACT_APP_URL_API}/chat`; // Ensure this matches your API endpoint for sending messages
@@ -30,18 +27,13 @@ const QuotesBox = () => {
       };
 
       const { data } = await axios.post(apiUrl, requestBody);
-      console.log(data);
-
       const botResponse = data;
 
       setMessages((prevMessages) => [
-        ...prevMessages,
         { role: "bot", content: botResponse },
       ]);
     } catch (error) {
-      console.error("Error sending message:", error);
       setMessages((prevMessages) => [
-        ...prevMessages,
         {
           role: "bot",
           content: "Ocurrio un error, intentelo nuevamente.",
