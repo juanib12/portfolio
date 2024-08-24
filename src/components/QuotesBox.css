@@ -4,6 +4,7 @@
     bottom: 0;
     right: 0;
     margin: 2em;
+    z-index: 1000;
 }
 
 .quotes-container label {
