@@ -39,7 +39,7 @@
     max-height: 7em;
     width: 12em;
     overflow-y: auto;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .quotes-box {

@@ -46,21 +46,9 @@
   box-sizing: border-box;
 }
 
-* {
-  scrollbar-width: none;
-}
-
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 0.8em;
-}
-
-*::-webkit-scrollbar-track {
-  display: none;
-}
-
-*::-webkit-scrollbar-thumb {
-  display: none;
 }
 
 html {
