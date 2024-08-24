@@ -28,10 +28,11 @@ const QuotesBox = () => {
 
       const { data } = await axios.post(apiUrl, requestBody);
       const botResponse = data;
-
+      
       setMessages((prevMessages) => [
         { role: "bot", content: botResponse },
       ]);
+      console.log(data, messages)
     } catch (error) {
       setMessages((prevMessages) => [
         {
