@@ -21,11 +21,11 @@ const Projects = () => {
 
   // const [repos, setRepos] = useState([]);
     
-  useEffect(() => {
-      fetch('https://api.github.com/users/juanib12/repos')
-      .then((res) => res.json())
-      .then((data) => console.log(data))
-  }, [])
+  // useEffect(() => {
+  //     fetch('https://api.github.com/users/juanib12/repos')
+  //     .then((res) => res.json())
+  //     .then((data) => console.log(data))
+  // }, [])
 
   return (
     <>

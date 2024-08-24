@@ -9,12 +9,14 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import CV from "./components/CV";
+import QuotesBox from './components/QuotesBox'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
       <Header />
+      <QuotesBox />
       <Routes>
         <Route path="/" element={<App />}/>
         <Route path="/projects" element={<Projects />} />

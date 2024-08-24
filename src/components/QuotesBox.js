@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react"
 import './QuotesBox.css';
 import axios from 'axios';
+import { Robot } from "../icons/Icons";
 
 const QuotesBox = () => {
   const [messages, setMessages] = useState([]);
@@ -56,15 +57,14 @@ const QuotesBox = () => {
     <ul className="quotes-container">
       <li>
         <label htmlFor='btn-bot'>
-          <i className='bx bxs-bot' onMouseEnter={rechargeApi}></i>
+          <Robot onMouseEnter={rechargeApi} />
           <article className="quotes-box">
             <div className="messages-container">
                 {messages.map((message, index) => (
-                <p key={index} className={`message ${message.role}`}>
-                    {message.content}
-                </p>
+                  <p key={index} className={`message ${message.role}`}>
+                      {message.content}
+                  </p>
                 ))}
-                {/* Loading indicator */}
                 {isLoading && <p className="loading">Pensando...</p>}
                 <div ref={messagesEndRef} />
             </div>
