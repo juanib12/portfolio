@@ -26,11 +26,9 @@
 .quotes-container article {
     position: absolute;
     display: none;
-    top: -15em;
+    top: -8em;
     right: 0;
-    animation: ease-in;
-    animation-name: run;
-    animation-duration: 0.25s;
+    transition: all .5s ease;
 }
 
 .quotes-container label:hover article {
