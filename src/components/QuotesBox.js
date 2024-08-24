@@ -2,7 +2,6 @@ import { useEffect, useState, useRef } from "react"
 import './QuotesBox.css';
 import axios from 'axios';
 
-
 const QuotesBox = () => {
   const [messages, setMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -21,7 +20,7 @@ const QuotesBox = () => {
     ]);
 
     try {
-      const apiUrl = `${process.env.REACT_APP_URL_API}/chat`; // Ensure this matches your API endpoint for sending messages
+      const apiUrl = `${process.env.REACT_APP_URL_API}/chat`;
       const requestBody = {
         message: "Di un tip para desarrolladores fullstack pero no lo repitas seguidamente y que no tenga mas de 30 caracteres, ahorrate el saludo y di directo el tip",
       };

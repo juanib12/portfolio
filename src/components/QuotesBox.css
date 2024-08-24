@@ -34,15 +34,16 @@
 }
 
 .quotes-container label:hover article {
+    background-color: #000;
+    border-radius: 1em;
     display: flex;
     height: 14em;
+    max-height: 14em;
     width: 12em;
-    background-color: black;
-    border-radius: 1em;
+    overflow-y: auto;
+    align-items: start;
 }
 
 .quotes-box {
-    align-items: center;
-    width: 100%;
     padding: 2em;
 }
