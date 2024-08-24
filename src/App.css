@@ -46,17 +46,20 @@
   box-sizing: border-box;
 }
 
+* {
+  scrollbar-width: none;
+}
+
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 0.5em;
+  width: 0.8em;
+}
+
+*::-webkit-scrollbar-track {
+  display: none;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #48c6ef;
-  border-radius: 7em;
-}
-
-*::-webkit-scrollbar-corner {
   display: none;
 }
 
