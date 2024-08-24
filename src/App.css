@@ -56,6 +56,10 @@
   border-radius: 7em;
 }
 
+*::-webkit-scrollbar-corner {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
