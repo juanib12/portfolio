@@ -35,8 +35,8 @@
     background-color: #000;
     border-radius: 1em;
     display: flex;
-    height: 14em;
-    max-height: 14em;
+    height: 7em;
+    max-height: 7em;
     width: 12em;
     overflow-y: auto;
     align-items: start;
