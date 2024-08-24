@@ -464,6 +464,10 @@ img {
   padding-bottom: 4em;
 }
 
+.projects_list li:hover {
+  opacity: .7;
+}
+
 .projects_data {
   position: relative;
   display: flex;
