@@ -51,7 +51,7 @@ const QuotesBox = () => {
 
   useEffect(() => {
       sendMessage()
-  }, [])
+  }, [messages])
 
   return (
     <ul className="quotes-container">
