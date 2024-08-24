@@ -49,6 +49,7 @@
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 0.5em;
+  border-radius: 7em;
 }
 
 *::-webkit-scrollbar-thumb {
