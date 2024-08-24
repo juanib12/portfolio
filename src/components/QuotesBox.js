@@ -62,24 +62,25 @@ const QuotesBox = () => {
   }, [])
 
   return (
-    <div className="quotes-container">
-      <label htmlFor='btn-bot'>
-        <i className='bx bxs-bot'></i>
-      </label>
-      <input type='checkbox' id='btn-bot' name='btn-bot'/>
-      <article className="quotes-box">
-        <div className="messages-container">
-            {messages.map((message, index) => (
-            <p key={index} className={`message ${message.role}`}>
-                {message.content}
-            </p>
-            ))}
-            {/* Loading indicator */}
-            {isLoading && <p className="loading">Sending...</p>}
-            <div ref={messagesEndRef} />
-        </div>
-      </article>
-    </div>
+    <ul className="quotes-container">
+      <li>
+        <label htmlFor='btn-bot'>
+          <i className='bx bxs-bot'></i>
+          <article className="quotes-box">
+            <div className="messages-container">
+                {messages.map((message, index) => (
+                <p key={index} className={`message ${message.role}`}>
+                    {message.content}
+                </p>
+                ))}
+                {/* Loading indicator */}
+                {isLoading && <p className="loading">Pensando...</p>}
+                <div ref={messagesEndRef} />
+            </div>
+          </article>
+        </label>
+      </li>
+    </ul>
   )
 }
 
