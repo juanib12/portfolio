@@ -10,23 +10,16 @@ import findflix from "../images/findflix.png";
 import redlimit from "../images/redlimit.jpg";
 import tmdb from "../images/tmdb.png";
 import firechat from "../images/firechat.png";
-import { useEffect } from "react";
 import resdev from '../images/resdev.png'
 import JS from "../images/javascript.png";
 import PHP from "../images/PHP.png";
 import html from "../images/html.png";
 import css from "../images/css.png";
+import ANGULAR from '../images/angular.png'
+import TS from '../images/ts.webp'
+import qdp from '../images/qdp.png'
 
 const Projects = () => {
-
-  // const [repos, setRepos] = useState([]);
-    
-  // useEffect(() => {
-  //     fetch('https://api.github.com/users/juanib12/repos')
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data))
-  // }, [])
-
   return (
     <>
       <div className="background"></div>
@@ -35,6 +28,71 @@ const Projects = () => {
           <h1>Proyectos</h1>
         </div>
         <ul className="projects_list">
+          <li className="links">
+            <a
+              target="_blank"
+              href="https://resolvedev.com"
+              rel="noreferrer"
+            >
+              <div className="projects_data">
+                <div className="projects_data-images">
+                  <img src={resdev} alt="todo"/>
+                </div>
+                <div className="projects_data-info">
+                  <div className="projects_data-title">
+                    <h2>Resolve Dev</h2>
+                  </div>
+                  <div className="projects_data-leng">
+                    <img src={JS} width="50px" alt="javascript"/>
+                    <img src={html} width="50px" alt="html"/>
+                    <img src={css} width="50px" alt="css"/>
+                  </div>
+                  <div className="projects_data-desc">
+                    Sitio web de mi equipo de desarrolladores donde ofrecemos servicios
+                    de desarrollo web, creación de tiendas online y desarrollo a medida.
+                  </div>
+                  <div className="projects_data-responsive">
+                    <p>Responsive</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li className="links">
+            <a
+              target="_blank"
+              href="https://quedeporte.com.ar"
+              rel="noreferrer"
+            >
+              <div className="projects_data">
+                <div className="projects_data-images">
+                  <img src={qdp} alt="todo"/>
+                </div>
+                <div className="projects_data-info">
+                  <div className="projects_data-title">
+                    <h2>QueDeporte</h2>
+                  </div>
+                  <div className="projects_data-leng">
+                    <img src={ANGULAR} width="50px" alt="javascript"/>
+                    <img src={TS} width="50px" alt="javascript"/>
+                    <img src={Node} width="50px" alt="javascript"/>
+                    <img src={Mongo} width="50px" alt="javascript"/>
+                    <img src={html} width="50px" alt="html"/>
+                    <img src={css} width="50px" alt="css"/>
+                  </div>
+                  <div className="projects_data-desc">
+                    Buscador de centros deportivos y profesionales del deporte.
+                    Participo en el desarrollo actualmente junto a otros desarrolladores.
+                  </div>
+                  <div className="projects_data-responsive">
+                    <p>Responsive</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
           <li className="links">
             <a
                 target="_blank"
@@ -70,68 +128,6 @@ const Projects = () => {
           <li className="links">
             <a
               target="_blank"
-              href="https://toodnotes.vercel.app/"
-              rel="noreferrer"
-            >
-              <div className="projects_data">
-                <div className="projects_data-images">
-                  <img src={Tood} alt="todo"/>
-                </div>
-                <div className="projects_data-info">
-                  <div className="projects_data-title">
-                    <h2>Tood - Notes</h2>
-                  </div>
-                  <div className="projects_data-leng">
-                    <img src={ReactChiquito} width="50px" alt="react"/>
-                    <img src={Mui} width="50px" alt="mui"/>
-                    <img src={Firebase} width="50px" alt="firebase"/>
-                  </div>
-                  <div className="projects_data-desc">
-                    App donde podrás añadir, editar o eliminar tus notas y marcarlas
-                    como completado.
-                  </div>
-                  <div className="projects_data-responsive">
-                    <p>Responsive</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-
-          <li className="links">
-            <a
-              target="_blank"
-              href="https://resolvedev.com"
-              rel="noreferrer"
-            >
-              <div className="projects_data">
-                <div className="projects_data-images">
-                  <img src={resdev} alt="todo"/>
-                </div>
-                <div className="projects_data-info">
-                  <div className="projects_data-title">
-                    <h2>Resolve Dev</h2>
-                  </div>
-                  <div className="projects_data-leng">
-                    <img src={JS} width="50px" alt="javascript"/>
-                    <img src={html} width="50px" alt="html"/>
-                    <img src={css} width="50px" alt="css"/>
-                  </div>
-                  <div className="projects_data-desc">
-                    Sitio web de mi equipo de desarrolladores donde ofrecemos servicios
-                    de desarrollo web, creación de tiendas online y desarrollo a medida.
-                  </div>
-                  <div className="projects_data-responsive">
-                    <p>Responsive</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-
-          <li className="links">
-            <a
-              target="_blank"
               href="https://digitalredlimit.com"
               rel="noreferrer"
             >
@@ -151,6 +147,37 @@ const Projects = () => {
                   </div>
                   <div className="projects_data-desc">
                     Sitio web para agencia de marketing, desarrollada por Resolve Dev.
+                  </div>
+                  <div className="projects_data-responsive">
+                    <p>Responsive</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li className="links">
+            <a
+              target="_blank"
+              href="https://toodnotes.vercel.app/"
+              rel="noreferrer"
+            >
+              <div className="projects_data">
+                <div className="projects_data-images">
+                  <img src={Tood} alt="todo"/>
+                </div>
+                <div className="projects_data-info">
+                  <div className="projects_data-title">
+                    <h2>Tood - Notes</h2>
+                  </div>
+                  <div className="projects_data-leng">
+                    <img src={ReactChiquito} width="50px" alt="react"/>
+                    <img src={Mui} width="50px" alt="mui"/>
+                    <img src={Firebase} width="50px" alt="firebase"/>
+                  </div>
+                  <div className="projects_data-desc">
+                    App donde podrás añadir, editar o eliminar tus notas y marcarlas
+                    como completado.
                   </div>
                   <div className="projects_data-responsive">
                     <p>Responsive</p>
