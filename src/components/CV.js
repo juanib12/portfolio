@@ -1,4 +1,4 @@
-import _cv from '../images/cv.png' 
+import _cv from '../images/cv.jpg' 
 
 const CV = () => {
     return (
