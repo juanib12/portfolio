@@ -18,6 +18,7 @@ import css from "../images/css.png";
 import ANGULAR from '../images/angular.png'
 import TS from '../images/ts.webp'
 import qdp from '../images/qdp.png'
+import liga from '../images/liga.png'
 
 const Projects = () => {
   return (
@@ -28,6 +29,34 @@ const Projects = () => {
           <h1>Proyectos</h1>
         </div>
         <ul className="projects_list">
+        <li className="links">
+            <a
+              target="_blank"
+              href="https://ligachivilcoyana.com.ar"
+              rel="noreferrer"
+            >
+              <div className="projects_data">
+                <div className="projects_data-images">
+                  <img src={liga} alt="todo"/>
+                </div>
+                <div className="projects_data-info">
+                  <div className="projects_data-title">
+                    <h2>Liga Chivilcoyana</h2>
+                  </div>
+                  <div className="projects_data-leng">
+                    <img src={ReactChiquito} width="50px" alt="javascript"/>
+                    <img src={Node} width="50px" alt="html"/>
+                  </div>
+                  <div className="projects_data-desc">
+                    Aplicación web para la gestión de la liga chivilcoyana de voley. Desarrollada junto al equipo de Resolve Dev.
+                  </div>
+                  <div className="projects_data-responsive">
+                    <p>Responsive</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
           <li className="links">
             <a
               target="_blank"

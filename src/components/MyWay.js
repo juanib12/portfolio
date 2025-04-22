@@ -98,6 +98,19 @@ const MyWay = () => {
                             </article>
                         </section>
                     </li>
+                    <li className="timeline-block timeline-block-right">
+                        <div className="marker"></div>
+                        <section className="timeline-content">
+                            <header>
+                                <em>Abril - 2025</em>
+                                <strong style={{ color: "rgb(56 189 248)" }}>Packaged App Development Associate</strong>
+                                <span>ACCENTURE</span>
+                            </header>
+                            <article>
+                                <p></p>
+                            </article>
+                        </section>
+                    </li>
                 </ul>
             </div>
         </section>
