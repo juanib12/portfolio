@@ -32,7 +32,7 @@ const Projects = () => {
         <li className="links">
             <a
               target="_blank"
-              href="https://ligachivilcoyana.com.ar"
+              href="https://ligachivilcoyana.com.ar/ligas"
               rel="noreferrer"
             >
               <div className="projects_data">
