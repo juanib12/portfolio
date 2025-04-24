@@ -10,6 +10,9 @@ import Contact from "./components/Contact";
 import Header from "./components/Header";
 import CV from "./components/CV";
 import QuotesBox from './components/QuotesBox'
+import PanelPosts from "./components/PanelPosts";
+import Blogs from "./components/Blogs";
+import BlogDetail from "./components/BlogDetail";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +25,9 @@ root.render(
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<CV />} />
+        <Route path="/panel" element={<PanelPosts />} />
+        <Route path="/blog" element={<Blogs />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
       </Routes>
       <Footer />
     </React.StrictMode>

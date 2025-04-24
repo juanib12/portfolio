@@ -8,7 +8,8 @@ const Header = () => {
   const [active, setActive] = useState({
     about: '',
     projects: '',
-    contact: ''
+    contact: '',
+    blog: ''
   })
   const [style, setStyle] = useState("")
 
@@ -41,17 +42,22 @@ const Header = () => {
           <li className="nav__item">
             {location.pathname !== "/" ? (
               <Link to="/" className={`nav__link ${active.about}`} onClick={((e) => onClick('about'))} >
-                Sobre m&iacute;
+                🏠
               </Link>
             ) : (
               <a href="#sobremi" className={`nav__link ${active.about}`} onClick={((e) => onClick('about'))} >
-                Sobre m&iacute;
+                🏠
               </a>
             )}
           </li>
           <li className="nav__item">
             <Link to="/projects" className={`nav__link ${active.projects}`} onClick={((e) => onClick('projects'))} >
               Proyectos
+            </Link>
+          </li>
+          <li className="nav__item">
+            <Link to="/blog" className={`nav__link ${active.blog}`} onClick={((e) => onClick('blog'))} >
+              Blog
             </Link>
           </li>
           <li className="nav__item">
