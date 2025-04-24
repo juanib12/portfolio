@@ -124,6 +124,37 @@ const Projects = () => {
 
           <li className="links">
             <a
+              target="_blank"
+              href="https://digitalredlimit.com"
+              rel="noreferrer"
+            >
+              <div className="projects_data">
+                <div className="projects_data-images">
+                  <img src={redlimit} alt="todo"/>
+                </div>
+                <div className="projects_data-info">
+                  <div className="projects_data-title">
+                    <h2>Digital Red Limit</h2>
+                  </div>
+                  <div className="projects_data-leng">
+                    <img src={PHP} width="50px" alt="php"/>
+                    <img src={JS} width="50px" alt="javascript"/>
+                    <img src={html} width="50px" alt="html"/>
+                    <img src={css} width="50px" alt="css"/>
+                  </div>
+                  <div className="projects_data-desc">
+                    Sitio web para agencia de marketing, desarrollada por Resolve Dev.
+                  </div>
+                  <div className="projects_data-responsive">
+                    <p>Responsive</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li className="links">
+            <a
                 target="_blank"
                 href="https://findflix.vercel.app/"
                 rel="noreferrer"
@@ -154,36 +185,6 @@ const Projects = () => {
             </a>
           </li>
 
-          <li className="links">
-            <a
-              target="_blank"
-              href="https://digitalredlimit.com"
-              rel="noreferrer"
-            >
-              <div className="projects_data">
-                <div className="projects_data-images">
-                  <img src={redlimit} alt="todo"/>
-                </div>
-                <div className="projects_data-info">
-                  <div className="projects_data-title">
-                    <h2>Digital Red Limit</h2>
-                  </div>
-                  <div className="projects_data-leng">
-                    <img src={PHP} width="50px" alt="php"/>
-                    <img src={JS} width="50px" alt="javascript"/>
-                    <img src={html} width="50px" alt="html"/>
-                    <img src={css} width="50px" alt="css"/>
-                  </div>
-                  <div className="projects_data-desc">
-                    Sitio web para agencia de marketing, desarrollada por Resolve Dev.
-                  </div>
-                  <div className="projects_data-responsive">
-                    <p>Responsive</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
           <li className="links">
             <a
               href="https://animadle.vercel.app/"
