@@ -24,11 +24,11 @@ const Blogs = () => {
 
   return (
     <div className="blog-container bd-grid">
-      <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>📝 Blog de programación</h2>
+      <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>📝 Mis posts</h2>
       {loading ? (
         <p>Cargando publicaciones...</p>
       ) : posts.length === 0 ? (
-        <p>No hay publicaciones aún. ¡Volvé más tarde!</p>
+        <p className='empty-state'>No hay publicaciones aún. ¡Volvé más tarde!</p>
       ) : (
         <div className="posts-grid">
           {posts.map((post) => (
