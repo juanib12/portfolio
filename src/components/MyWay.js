@@ -115,6 +115,6 @@ const MyWay = () => {
             </div>
         </section>
     )
-}
+} 
 
 export default MyWay
