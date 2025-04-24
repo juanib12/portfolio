@@ -184,38 +184,6 @@ const Projects = () => {
               </div>
             </a>
           </li>
-
-          <li className="links">
-            <a
-              target="_blank"
-              href="https://toodnotes.vercel.app/"
-              rel="noreferrer"
-            >
-              <div className="projects_data">
-                <div className="projects_data-images">
-                  <img src={Tood} alt="todo"/>
-                </div>
-                <div className="projects_data-info">
-                  <div className="projects_data-title">
-                    <h2>Tood - Notes</h2>
-                  </div>
-                  <div className="projects_data-leng">
-                    <img src={ReactChiquito} width="50px" alt="react"/>
-                    <img src={Mui} width="50px" alt="mui"/>
-                    <img src={Firebase} width="50px" alt="firebase"/>
-                  </div>
-                  <div className="projects_data-desc">
-                    App donde podrás añadir, editar o eliminar tus notas y marcarlas
-                    como completado.
-                  </div>
-                  <div className="projects_data-responsive">
-                    <p>Responsive</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-
           <li className="links">
             <a
               href="https://animadle.vercel.app/"
@@ -237,65 +205,6 @@ const Projects = () => {
                   <div className="projects_data-desc">
                     Juego al estilo wordle, donde deberás adivinar el animal de 5
                     letras.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-
-          <li className="links">
-            <a
-              target="_blank"
-              href="https://techfix-demo.vercel.app/"
-              rel="noreferrer"
-            >
-              <div className="projects_data">
-                <div className="projects_data-images">
-                  <img src={Techfix} alt="techfix"/>
-                </div>
-                <div className="projects_data-info">
-                  <div className="projects_data-title">
-                    <h2>Techfix</h2>
-                  </div>
-                  <div className="projects_data-leng">
-                    <img src={ReactChiquito} width="50px" alt="react"/>
-                    <img src={Mui} width="50px" alt="mui"/>
-                    <img src={Mongo} width="50px" alt="mongo"/>
-                    <img src={Node} width="50px" alt="node"/>
-                  </div>
-                  <div className="projects_data-desc">
-                    App donde podrás añadir, editar o eliminar tus servicios para tu
-                    negocio de servicio técnico.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-
-          <li className="links">
-            <a
-              target="_blank"
-              href="https://juani-chat-app.vercel.app/"
-              rel="noreferrer"
-            >
-              <div className="projects_data">
-                <div className="projects_data-images">
-                  <img src={firechat} alt="firechat"/>
-                </div>
-                <div className="projects_data-info">
-                  <div className="projects_data-title">
-                    <h2>FireChat</h2>
-                  </div>
-                  <div className="projects_data-leng">
-                    <img src={ReactChiquito} width="50px" alt="react"/>
-                    <img src={Firebase} width="50px" alt="firebase"/>
-                  </div>
-                  <div className="projects_data-desc">
-                    Una app para enviar y recibir mensajes en tiempo real a los
-                    usuarios que esten registrados.
-                  </div>
-                  <div className="projects_data-responsive">
-                    <p>Responsive</p>
                   </div>
                 </div>
               </div>
