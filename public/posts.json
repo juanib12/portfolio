@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Test Post",
+        "content": "Testing post",
+        "slug": "test-post"
+    },
+    {
+        "title": "Another Post",
+        "content": "Another content",
+        "slug": "another-post"
+    }
+]

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { supabase } from '../supabaseClient';
 import '../styles/panel.css';
+import { getPosts } from '../services/posts';
 
 const BlogDetail = () => {
   const { slug } = useParams();
@@ -10,16 +10,14 @@ const BlogDetail = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
-      const { data, error } = await supabase
-        .from('posts')
-        .select('*')
-        .eq('slug', slug)
-        .single();
+      const data = await getPosts();
+      console.log(data);
+      const postFilter = data.find(p => p.slug === slug);
 
-      if (error) {
-        console.error('Error al obtener el post:', error);
+      if (!postFilter) {
+        console.error('Error al obtener el post:', postFilter);
       } else {
-        setPost(data);
+        setPost(postFilter);
       }
       setLoading(false);
     };
@@ -38,7 +36,7 @@ const BlogDetail = () => {
   return (
     <div className="blog-container blog-detail bd-grid">
       <h2>{post.title}</h2>
-      <p className="blog-date">Publicado: {new Date(post.created_at).toLocaleDateString()}</p>
+      {/* <p className="blog-date">Publicado: {new Date(post.created_at).toLocaleDateString()}</p> */}
       <div className="blog-content">{post.content}</div>
     </div>
   );

@@ -11,7 +11,11 @@ const Blogs = () => {
     const fetchAllPosts = async () => {
       try {
         const data = await getPosts();
-        setPosts(data);
+        console.log(data);
+        
+        if(data && Array.isArray(data) && data.length > 0) {
+          setPosts(data);
+        }
       } catch (error) {
         console.error('Error al obtener posts:', error);
       } finally {
