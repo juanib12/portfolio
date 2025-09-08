@@ -36,7 +36,7 @@ const Blogs = () => {
       ) : (
         <div className="posts-grid">
           {posts.map((post) => (
-            <Link to={`/blog/${post.slug}`}>
+            <Link to={`/blog/${post.slug}`} key={post.slug}>
               <div key={post.id} className="post-card">
                 <h3>{post.title}</h3>
                 <p>{post.content.length > 200 ? post.content.slice(0, 200) + '...' : post.content}</p>
