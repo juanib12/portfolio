@@ -118,10 +118,15 @@
   
   .blog-content {
     font-size: 1.05rem;
-    line-height: 1.7;
+    line-height: 1.3;
     color: #374151;
     white-space: pre-line;
     overflow-x: auto;
+  }
+
+  .blog-content h2 {
+    margin-top: unset !important;
+    margin-bottom: unset !important;
   }
   
   .blog-meta {

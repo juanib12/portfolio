@@ -46,7 +46,7 @@ export default function BlogDetailPage({post}) {
   return (
     <>
       <Head>
-        <title>Blog - {slug} - Juan Bianco</title>
+        <title>{post.title} - Juan Bianco</title>
         <meta name="description" content={`Artículo del blog: ${slug}`} />
       </Head>
       <Header />
