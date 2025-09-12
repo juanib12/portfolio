@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import Profile from '../images/juani2.jpg'
+import Link from "next/link";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -8,7 +8,7 @@ const Home = () => {
       <section className="bd-grid">
         <div className="home">
           <div style={{width: '15em'}}>
-            <img src={Profile} alt="profile" className="avatar"/>
+            <Image src="/images/juani2.jpg" alt="profile" className="avatar" width={240} height={240}/>
           </div>
           <div className="home_title">
             <h2>Hola! Soy</h2>
@@ -20,7 +20,7 @@ const Home = () => {
               Sobre mí
             </a>
             <Link
-              to="/cv"
+              href="/cv"
               className="home_actions-cv"
             >
               Descargar CV

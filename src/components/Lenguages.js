@@ -1,19 +1,4 @@
-import JS from "../images/javascript.png";
-import html from "../images/html.png";
-import css from "../images/css.png";
-import node from "../images/node.png";
-import mysql from "../images/mysql.png";
-import gh from "../images/gh.png";
-import tailwind from "../images/tailwind.png";
-import react from "../images/reactlogo.png";
-import mongo from "../images/mongodb.png";
-import angular from "../images/angular.png"
-import net from '../images/net.png'
-import sql from '../images/sql.png'
-import git from '../images/git.png'
-import vscode from '../images/vscode.png'
-import vs from '../images/vs.png'
-import csharp from '../images/csharp.png'
+import Image from "next/image";
 
 const Lenguagues = () => {
   return (
@@ -36,42 +21,42 @@ const Lenguagues = () => {
         <li className="card" id="card_8">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={react} alt="react"/>
+              <Image src="/images/reactlogo.png" alt="react" width={100} height={100}/>
             </div>
           </div>
         </li>        
         <li className="card" id="card_9">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img style={{width: "256px"}} src={angular} alt="angular"/>
+              <Image src="/images/angular.png" alt="angular" width={100} height={100}/>
             </div>
           </div>
         </li>
         <li className="card" id="card_1">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={JS} alt="js"/>
+              <Image src="/images/javascript.png" alt="js" width={100} height={100}/>
             </div>
           </div>
         </li>
         <li className="card" id="card_2">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={html} alt="lenguage-img"/>
+              <Image src="/images/html.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
         <li className="card" id="card_3">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={css} alt="lenguage-img"/>
+              <Image src="/images/css.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
         <li className="card" id="card_7">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={tailwind} alt="lenguage-img"/>
+              <Image src="/images/tailwind.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
@@ -85,21 +70,21 @@ const Lenguagues = () => {
         <li className="card" id="card_4">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={node} alt="lenguage-img"/>
+              <Image src="/images/node.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
         <li className="card" id="card_4">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={net} alt="lenguage-img"/>
+              <Image src="/images/net.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
         <li className="card" id="card_4">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={csharp} alt="lenguage-img"/>
+              <Image src="/images/csharp.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
@@ -113,21 +98,21 @@ const Lenguagues = () => {
         <li className="card" id="card_5">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={mysql} alt="lenguage-img"/>
+              <Image src="/images/mysql.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
         <li className="card" id="card_5">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img style={{height: "16em"}} src={sql} alt="lenguage-img"/>
+            <Image src="/images/mysql.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
         <li className="card" id="card_10">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={mongo} alt="lenguage-img"/>
+              <Image src="/images/mongodb.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
@@ -141,28 +126,28 @@ const Lenguagues = () => {
         <li className="card" id="card_6">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={gh} alt="lenguage-img"/>
+              <Image src="/images/gh.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
         <li className="card" id="card_6">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={git} alt="lenguage-img"/>
+              <Image src="/images/git.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
         <li className="card" id="card_6">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={vscode} alt="lenguage-img"/>
+              <Image src="/images/vscode.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>
         <li className="card" id="card_6">
           <div className="card__content">
             <div className="lenguagues_images">
-              <img src={vs} alt="lenguage-img"/>
+              <Image src="/images/vs.png" alt="lenguage-img" width={100} height={100}/>
             </div>
           </div>
         </li>

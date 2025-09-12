@@ -1,6 +1,4 @@
-import utn from '../images/logo-utn.png'
-import udemy from '../images/udemy.png'
-import untref from '../images/untref.png';
+import Image from "next/image";
 
 const Education = () => {
   return (
@@ -14,7 +12,7 @@ const Education = () => {
             <h3>Educación</h3>
           </div>
           <div className="ed-card-container">
-            <img src={untref} alt="untref" width="50" height="50" />
+            <Image src="/images/untref.png" alt="untref" width={50} height={50} />
             <div className="ed-card-data">
               <h4>Universidad Nacional de Tres de Febrero</h4>
               <p>Diplomatura Universitaria en Desarrollo Backend</p>
@@ -22,7 +20,7 @@ const Education = () => {
             </div>
           </div>
           <div className="ed-card-container">
-            <img src={utn} alt="utn" width="50" height="50" />
+            <Image src="/images/logo-utn.png" alt="utn" width={50} height={50} />
             <div className="ed-card-data">
               <h4>Universidad Tecnológica Nacional</h4>
               <p>Tecnicatura Universidad en Programación</p>
@@ -36,7 +34,7 @@ const Education = () => {
             <h3>Licencias y certificaciones</h3>
           </div>
           <div className="ed-card-container">
-            <img src={udemy} alt="udemy" width="50" height="50" />
+            <Image src="/images/udemy.png" alt="udemy" width={50} height={50} />
             <div className="ed-card-data">
               <h4>Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero</h4>
               <p>Udemy</p>
@@ -45,7 +43,7 @@ const Education = () => {
             </div>
           </div>
           <div className="ed-card-container">
-            <img src={udemy} alt="udemy" width="50" height="50" />
+            <Image src="/images/udemy.png" alt="udemy" width={50} height={50} />
             <div className="ed-card-data">
               <h4>React - Guía definitiva: hooks router redux next +Proyectos</h4>
               <p>Udemy</p>

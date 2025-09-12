@@ -1,24 +1,4 @@
-import Animadle from "../images/animadle.png";
-import ReactChiquito from "../images/reactchiquito.png";
-import Mui from "../images/mui.png";
-import Tood from "../images/tood.png";
-import Firebase from "../images/firebase.png";
-import Techfix from "../images/techfixapp.png";
-import Node from "../images/node.png";
-import Mongo from "../images/mongodbicon.png";
-import findflix from "../images/findflix.png";
-import redlimit from "../images/redlimit.jpg";
-import tmdb from "../images/tmdb.png";
-import firechat from "../images/firechat.png";
-import resdev from '../images/resdev.png'
-import JS from "../images/javascript.png";
-import PHP from "../images/PHP.png";
-import html from "../images/html.png";
-import css from "../images/css.png";
-import ANGULAR from '../images/angular.png'
-import TS from '../images/ts.webp'
-import qdp from '../images/qdp.png'
-import liga from '../images/liga.png'
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -37,15 +17,15 @@ const Projects = () => {
             >
               <div className="projects_data">
                 <div className="projects_data-images">
-                  <img src={liga} alt="todo"/>
+                  <Image src="/images/liga.png" alt="todo" width={400} height={300}/>
                 </div>
                 <div className="projects_data-info">
                   <div className="projects_data-title">
                     <h2>Liga Chivilcoyana</h2>
                   </div>
                   <div className="projects_data-leng">
-                    <img src={ReactChiquito} width="50px" alt="javascript"/>
-                    <img src={Node} width="50px" alt="html"/>
+                    <Image src="/images/reactchiquito.png" width={50} height={50} alt="javascript"/>
+                    <Image src="/images/node.png" width={50} height={50} alt="html"/>
                   </div>
                   <div className="projects_data-desc">
                     Aplicación web para la gestión de la liga chivilcoyana de voley. Desarrollada junto al equipo de Resolve Dev.
@@ -65,16 +45,16 @@ const Projects = () => {
             >
               <div className="projects_data">
                 <div className="projects_data-images">
-                  <img src={resdev} alt="todo"/>
+                  <Image src="/images/resdev.png" alt="todo" width={400} height={300}/>
                 </div>
                 <div className="projects_data-info">
                   <div className="projects_data-title">
                     <h2>Resolve Dev</h2>
                   </div>
                   <div className="projects_data-leng">
-                    <img src={JS} width="50px" alt="javascript"/>
-                    <img src={html} width="50px" alt="html"/>
-                    <img src={css} width="50px" alt="css"/>
+                    <Image src="/images/javascript.png" width={50} height={50} alt="javascript"/>
+                    <Image src="/images/html.png" width={50} height={50} alt="html"/>
+                    <Image src="/images/css.png" width={50} height={50} alt="css"/>
                   </div>
                   <div className="projects_data-desc">
                     Sitio web de mi equipo de desarrolladores donde ofrecemos servicios
@@ -96,19 +76,19 @@ const Projects = () => {
             >
               <div className="projects_data">
                 <div className="projects_data-images">
-                  <img src={qdp} alt="todo"/>
+                  <Image src="/images/qdp.png" alt="todo" width={400} height={300}/>
                 </div>
                 <div className="projects_data-info">
                   <div className="projects_data-title">
                     <h2>QueDeporte</h2>
                   </div>
                   <div className="projects_data-leng">
-                    <img src={ANGULAR} width="50px" alt="javascript"/>
-                    <img src={TS} width="50px" alt="javascript"/>
-                    <img src={Node} width="50px" alt="javascript"/>
-                    <img src={Mongo} width="50px" alt="javascript"/>
-                    <img src={html} width="50px" alt="html"/>
-                    <img src={css} width="50px" alt="css"/>
+                    <Image src="/images/angular.png" width={50} height={50} alt="javascript"/>
+                    <Image src="/images/ts.webp" width={50} height={50} alt="javascript"/>
+                    <Image src="/images/node.png" width={50} height={50} alt="javascript"/>
+                    <Image src="/images/mongodbicon.png" width={50} height={50} alt="javascript"/>
+                    <Image src="/images/html.png" width={50} height={50} alt="html"/>
+                    <Image src="/images/css.png" width={50} height={50} alt="css"/>
                   </div>
                   <div className="projects_data-desc">
                     Buscador de centros deportivos y profesionales del deporte.
@@ -130,17 +110,17 @@ const Projects = () => {
             >
               <div className="projects_data">
                 <div className="projects_data-images">
-                  <img src={redlimit} alt="todo"/>
+                  <Image src="/images/redlimit.jpg" alt="todo" width={400} height={300}/>
                 </div>
                 <div className="projects_data-info">
                   <div className="projects_data-title">
                     <h2>Digital Red Limit</h2>
                   </div>
                   <div className="projects_data-leng">
-                    <img src={PHP} width="50px" alt="php"/>
-                    <img src={JS} width="50px" alt="javascript"/>
-                    <img src={html} width="50px" alt="html"/>
-                    <img src={css} width="50px" alt="css"/>
+                    <Image src="/images/PHP.png" width={50} height={50} alt="php"/>
+                    <Image src="/images/javascript.png" width={50} height={50} alt="javascript"/>
+                    <Image src="/images/html.png" width={50} height={50} alt="html"/>
+                    <Image src="/images/css.png" width={50} height={50} alt="css"/>
                   </div>
                   <div className="projects_data-desc">
                     Sitio web para agencia de marketing, desarrollada por Resolve Dev.
@@ -161,7 +141,7 @@ const Projects = () => {
               >
                 <div className="projects_data">
                   <div className="projects_data-images">
-                    <img src={findflix} alt="findflix"/>
+                    <Image src="/images/findflix.png" alt="findflix" width={400} height={300}/>
                   </div>
                   <div className="projects_data-info">
                     <article>
@@ -169,8 +149,8 @@ const Projects = () => {
                         <h2>FindFlix</h2>
                       </div>
                       <div className="projects_data-leng">
-                        <img src={ReactChiquito} width="50px" alt="react"/>
-                        <img src={tmdb} width="50px" alt="tmdb"/>
+                        <Image src="/images/reactchiquito.png" width={50} height={50} alt="react"/>
+                        <Image src="/images/tmdb.png" width={50} height={50} alt="tmdb"/>
                       </div>
                       <div className="projects_data-desc">
                         App divertida para encontrar información, servicios de streaming
@@ -193,15 +173,14 @@ const Projects = () => {
             >
               <div className="projects_data">
                 <div className="projects_data-images">
-                  <img src={Animadle} alt="animadle"/>
+                  <Image src="/images/animadle.png" alt="animadle" width={400} height={300}/>
                 </div>
                 <div className="projects_data-info">
                   <div className="projects_data-title">
                     <h2>Animadle</h2>
                   </div>
                   <div className="projects_data-leng">
-                    <img src={ReactChiquito} width="50px" alt="react"/>
-                    <img src={Mui} width="50px" alt="mui"/>
+                    <Image src="/images/mui.png" width={50} height={50} alt="mui"/>
                   </div>
                   <div className="projects_data-desc">
                     Juego al estilo wordle, donde deberás adivinar el animal de 5

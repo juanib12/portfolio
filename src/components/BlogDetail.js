@@ -1,45 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import '../styles/panel.css';
-import { getPosts } from '../services/posts';
+import Breadcumb from '../../src/components/Breadcumb'
+import Image from 'next/image';
 
-const BlogDetail = () => {
-  const { slug } = useParams();
-  const [post, setPost] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchPost = async () => {
-      const data = await getPosts();
-      console.log(data);
-      const postFilter = data.find(p => p.slug === slug);
-
-      if (!postFilter) {
-        console.error('Error al obtener el post:', postFilter);
-      } else {
-        setPost(postFilter);
-      }
-      setLoading(false);
-    };
-
-    fetchPost();
-  }, [slug]);
-
-  if (loading) {
-    return <div className="blog-container">Cargando post...</div>;
-  }
-
-  if (!post) {
-    return <div className="blog-container">Post no encontrado.</div>;
-  }
-
+export default function BlogDetail({ post }) {
   return (
     <div className="blog-container blog-detail bd-grid">
+      <Breadcumb />
+      <ul className="blog-meta">
+        <li>
+          <div>
+            <Image src="/images/juani2.jpg" alt="profile" className="avatar" width={50} height={50}/>
+            <span>Juan Ignacio Bianco</span>
+          </div>
+        </li>
+        <li>
+        {post.date && (
+          <p className="blog-date">
+            Publicado: {new Date(post.date).toLocaleDateString()}
+          </p>
+        )}
+        </li>
+      </ul>
       <h2>{post.title}</h2>
-      {/* <p className="blog-date">Publicado: {new Date(post.created_at).toLocaleDateString()}</p> */}
-      <div className="blog-content">{post.content}</div>
+      <div
+        className="blog-content"
+        dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+      />
     </div>
   );
 }
-
-export default BlogDetail;

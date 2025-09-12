@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { getPosts, createPost, updatePost, deletePost } from '../services/posts';
-import '../styles/panel.css';
 import { functions } from '../utils/functions';
 
 const PanelPosts = () => {

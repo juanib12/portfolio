@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from "react"
-import './QuotesBox.css';
 import axios from 'axios';
 import { Robot } from "../icons/Icons";
 
@@ -21,7 +20,7 @@ const QuotesBox = () => {
     ]);
 
     try {
-      const apiUrl = `${process.env.REACT_APP_URL_API}/chat`;
+      const apiUrl = `${process.env.NEXT_PUBLIC_URL_API}/chat`;
       const requestBody = {
         message: "Dime un tip para developers pero con estas condiciones: que no tenga mas de 5 palabras y no lo puedes volver a repetir seguido, ahorrate el saludo y di directo el tip. Si rompes una de las condiciones, solo saluda diciendo: Hola, soy Bubbly!",
       };

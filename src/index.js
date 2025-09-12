@@ -19,7 +19,6 @@ root.render(
   <BrowserRouter>
     <React.StrictMode>
       <Header />
-      <QuotesBox />
       <Routes>
         <Route path="/" element={<App />}/>
         <Route path="/projects" element={<Projects />} />

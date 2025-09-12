@@ -1,0 +1,20 @@
+import Head from 'next/head'
+import Header from '../src/components/Header'
+import Home from '../src/components/Home'
+import AboutMe from '../src/components/AboutMe'
+import Footer from '../src/components/Footer'
+
+export default function HomePage() {
+  return (
+    <>
+      <Head>
+        <title>Juan Bianco - Desarrollador FullStack</title>
+        <meta name="description" content="Portfolio de Juan Bianco - Desarrollador FullStack" />
+      </Head>
+      <Header />
+      <Home />
+      <AboutMe />
+      <Footer />
+    </>
+  )
+}

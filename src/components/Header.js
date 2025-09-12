@@ -1,9 +1,10 @@
-import { useState } from "react";
-import JB from "../images/jb.png";
-import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header = () => {
-  const location = useLocation();
+  const router = useRouter();
 
   const [active, setActive] = useState({
     about: '',
@@ -11,7 +12,7 @@ const Header = () => {
     contact: '',
     blog: ''
   })
-  const [style, setStyle] = useState("")
+  const [style, setStyle] = useState(undefined)
 
   const onClick = (name) => {
     setActive({
@@ -27,21 +28,24 @@ const Header = () => {
     }
   }
 
-  window.addEventListener('scroll', onScroll)
+  useEffect(() => {
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
     <header className="l-header" style={{background: style}}>
       <nav className="nav bd-grid">
         <div>
-          <Link to="/" className="nav__logo" onClick={((e) => onClick(''))}>
-            <img src={JB} alt="logo"/>
+          <Link href="/" className="nav__logo" onClick={((e) => onClick(''))}>
+            <Image src="/images/jb.png" alt="logo" width={32} height={32}/>
           </Link>
         </div>
 
         <ul className="nav__list">
           <li className="nav__item">
-            {location.pathname !== "/" ? (
-              <Link to="/" className={`nav__link ${active.about}`} onClick={((e) => onClick('about'))} >
+            {router.pathname !== "/" ? (
+              <Link href="/" className={`nav__link ${active.about}`} onClick={((e) => onClick('about'))} >
                 🏠
               </Link>
             ) : (
@@ -51,17 +55,17 @@ const Header = () => {
             )}
           </li>
           <li className="nav__item">
-            <Link to="/projects" className={`nav__link ${active.projects}`} onClick={((e) => onClick('projects'))} >
+            <Link href="/projects" className={`nav__link ${active.projects}`} onClick={((e) => onClick('projects'))} >
               Proyectos
             </Link>
           </li>
           <li className="nav__item">
-            <Link to="/blog" className={`nav__link ${active.blog}`} onClick={((e) => onClick('blog'))} >
+            <Link href="/blog" className={`nav__link ${active.blog}`} onClick={((e) => onClick('blog'))} >
               Blog
             </Link>
           </li>
           <li className="nav__item">
-            <Link to="/contact" className={`nav__link ${active.contact}`} onClick={((e) => onClick('contact'))} >
+            <Link href="/contact" className={`nav__link ${active.contact}`} onClick={((e) => onClick('contact'))} >
               Contacto
             </Link>
           </li>

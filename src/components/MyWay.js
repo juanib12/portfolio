@@ -1,4 +1,3 @@
-import '../styles/myway.css';
 
 const MyWay = () => {
 
