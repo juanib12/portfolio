@@ -9,7 +9,7 @@ export default function ContactPage() {
     <>
       <Head>
         <title>Contacto - Juan Bianco</title>
-        <meta name="description" content="Información de contacto de Juan Bianco" />
+        <meta name="description" content="Información de contacto de Juan Bianco " />
       </Head>
       <Header />
       <Contact />
