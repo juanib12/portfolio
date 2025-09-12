@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -45,7 +45,7 @@ const Footer = () => {
           >
             Descargar CV
           </a>
-          <Link className="footer-link" to="/contact">
+          <Link className="footer-link" href="/contact">
             Contacto
           </Link>
           <a

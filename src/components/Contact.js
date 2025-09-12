@@ -1,7 +1,4 @@
-import Github from "../images/gh.png";
-import WP from "../images/WP.png";
-import Linkedin from "../images/linkedin.png";
-import Gmail from "../images/gmail.png";
+import Image from "next/image";
 
 const Contact = () => {
 
@@ -25,7 +22,7 @@ const Contact = () => {
               <li>
                 <a href={`https://wa.me/5492346520154?text=${encodeURI("¡Hola! ")}`} target="__blank">
                   <div className="contact-data-images">
-                    <img src={WP} loading="lazy" alt="logo microsoft" />
+                    <Image src="/images/WP.png" alt="logo microsoft" width={150} height={150} />
                   </div>
                 </a>
               </li>
@@ -35,7 +32,7 @@ const Contact = () => {
                   target="__blank"
                 >
                   <div className="contact-data-images">
-                    <img src={Gmail} loading="lazy" alt="logo ge" />
+                    <Image src="/images/gmail.png" alt="logo ge" width={150} height={150} />
                   </div>
                 </a>
               </li>
@@ -45,14 +42,14 @@ const Contact = () => {
                   target="__blank"
                 >
                   <div className="contact-data-images">
-                    <img src={Linkedin} loading="lazy" alt="logo ge" />
+                    <Image src="/images/linkedin.png" alt="logo ge" width={150} height={150} />
                   </div>
                 </a>
               </li>
               <li>
                 <a href="https://github.com/juanib12" target="__blank">
                   <div className="contact-data-images">
-                    <img src={Github} loading="lazy" alt="logo airbnb" />
+                    <Image src="/images/gh.png" alt="logo airbnb" width={150} height={150} />
                   </div>
                 </a>
               </li>
