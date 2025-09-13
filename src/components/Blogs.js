@@ -18,7 +18,7 @@ export default function Blogs({ posts }) {
 
   return (
     <div className="blog-container bd-grid">
-      <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>📝 Mis posts</h2>
+      <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>📝 Recursos y Guías para Desarrolladores</h2>
       <div style={{ marginBottom: "1rem" }}>
         {CATEGORIES.map((cat) => (
           <button
