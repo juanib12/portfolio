@@ -40,7 +40,7 @@ const Footer = () => {
           <span className="footer-title">Sobre mí</span>
           <a
             className="footer-link"
-            href="https://drive.google.com/file/d/1vHC4mm_HtAmk4N5x-RBBOa7nZtlX-HTH/view?usp=sharing"
+            href="https://drive.google.com/file/d/18CQbopmULlXxoKrg-gS6MlK_gVEhaO9z/view?usp=sharing"
             target="__blank"
           >
             Descargar CV
