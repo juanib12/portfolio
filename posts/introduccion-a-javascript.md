@@ -3,6 +3,7 @@ title: "Introducción a JavaScript: Primeros Pasos"
 date: "2025-09-12"
 description: "Comenzamos una serie de posts sobre JavaScript. En esta introducción veremos qué es, para qué sirve y cómo empezar a escribir tus primeras líneas de código."
 tags: ["javascript", "introducción", "programación", "principiantes"]
+category: "javascript"
 ---
 
 JavaScript es uno de los lenguajes de programación más populares y versátiles del mundo. Se utiliza principalmente para crear páginas web interactivas, pero también se ha expandido a servidores, aplicaciones móviles y de escritorio.
