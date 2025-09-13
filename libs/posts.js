@@ -21,8 +21,7 @@ export async function fetchPosts() {
     };
   });
 
-  // Ordenar por fecha (descendente)
-  return posts.sort((a, b) => (a.date < b.date ? 1 : -1));
+  return posts.sort((a, b) => (b.order < a.order ? 1 : -1));
 }
 
 // Simula un "fetch" para un solo post
