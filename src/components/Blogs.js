@@ -5,6 +5,7 @@ import Image from "next/image";
 const CATEGORIES = [
   { label: "Todas", value: "all" },
   { label: "Javascript", value: "javascript" },
+  { label: "Next.js", value: "next.js" },
   // Agregá más categorías si las necesitás
 ];
 
