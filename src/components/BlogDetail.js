@@ -10,7 +10,7 @@ export default function BlogDetail({ post }) {
 
   const shareOnTwitter = () => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(`Check out this blog post: ${post.title}`);
+    const text = encodeURIComponent(`Quisiera compartir con ustedes este post: ${post.title}`);
     const twitterUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
     window.open(twitterUrl, '_blank');
   }
