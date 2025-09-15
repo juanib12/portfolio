@@ -13,6 +13,8 @@ export default function Document() {
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3925618271410880"
+     crossorigin="anonymous"></script>
         <title>Juan Bianco - Desarrollador FullStack</title>
         
         {/* Google Analytics */}
