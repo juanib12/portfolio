@@ -8,6 +8,8 @@ export default function CVPage() {
   return (
     <>
       <Head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3925618271410880"
+     crossorigin="anonymous"></script>
         <title>CV - Juan Bianco</title>
         <meta name="description" content="Currículum Vitae de Juan Bianco" />
       </Head>
