@@ -101,8 +101,8 @@ const MyWay = () => {
                         <div className="marker"></div>
                         <section className="timeline-content">
                             <header>
-                                <em>Abril - 2025</em>
-                                <strong style={{ color: "rgb(56 189 248)" }}>Packaged App Development Associate</strong>
+                                <em>Abril - 2026</em>
+                                <strong style={{ color: "rgb(56 189 248)" }}>Software Engineer SSR</strong>
                                 <span>ACCENTURE</span>
                             </header>
                             <article>
